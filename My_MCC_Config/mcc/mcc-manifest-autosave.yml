@@ -2,7 +2,11 @@
 
 manifest_file_version: 1.0.0
 project: My_MCC_Config
+<<<<<<< HEAD
 creation_date: 2026-05-24T18:50:35.500-04:00[America/Caracas]
+=======
+creation_date: 2026-05-24T18:40:38.673-04:00[America/Caracas]
+>>>>>>> cdff32dd1db46ffc9a68c8b0b24e1d5e891690d8
 operating_system: Windows 11
 mcc_mode: VSCodePlugin
 mcc_mode_version: Unknown
@@ -21,4 +25,3 @@ modules:
 - {name: '@mchp-mcc/pic16-configuration-bits-v1', type: MELODY, version: 4.1.4}
 - {name: '@mchp-mcc/pic16-pin-manager', type: MELODY, version: 3.6.4}
 - {name: '@mchp-mcc/scf-pic8-osc-v1', type: MELODY, version: 4.4.0}
-- {name: '@mchp-mcc/scf-pic8-tmr0-v1', type: MELODY, version: 5.1.2}
