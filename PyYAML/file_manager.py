@@ -1,7 +1,6 @@
 from pathlib import Path
 from typing import TypeVar, Generic
 
-
 class file_manager():
 
     def __init__(self, path: Path) -> None:
@@ -26,28 +25,28 @@ class file_manager():
                 return False # Fallo externo
     
     def read_file(self) -> None|bytes|str:    
-        if (self.path.exists() == False):
+        if (self.path.exists() == False): # comprobación existencia archivo
             return print("Ruta no valida")
 
-        if (self.__is_binary(self.path) == True):
+        if (self.__is_binary(self.path) == True): # comprobación archivo binario
             with self.path.open('rb'):
-                contenido = self.path.read_bytes()
+                contenido = self.path.read_bytes() # lectura archivo binario
             return contenido
         else:
             with self.path.open('r'):
-                contenido = self.path.read_text('utf-8')
+                contenido = self.path.read_text('utf-8') # lectura archivo texto
             return contenido
     
     def write_file(self, data: Union[str, bytes]):
-        if (isinstance(data,bytes)):
-            if(self.path.exists()==True):
+        if (isinstance(data,bytes)):    # comprobación archivo binario
+            if(self.path.exists()==True):   # comprobación para no sobreescribir
                 with self.path.open("ab"):
-                    contenido = self.path.open("ab").write(data)
+                    contenido = self.path.open("ab").write(data) # bytes añadidos
             else:
-                contenido = self.path.write_bytes(data)
+                contenido = self.path.write_bytes(data) # texto añadido
         else:
             if(self.path.exists()==True):
                 with self.path.open("a"):
-                    contenido = self.path.open("a",encoding="utf-8").write(data)
+                    contenido = self.path.open("a",encoding="utf-8").write(data)    # bytes añadidos
             else:
-                contenido = self.path.write_text(data, encoding="utf-8")
+                contenido = self.path.write_text(data, encoding="utf-8")    # texto añadido
