@@ -87,6 +87,7 @@
 #define SWITCH_SetOpenDrain()       do { ODCONCbits.ODCC3 = 1; } while(0)
 #define SWITCH_SetAnalogMode()      do { ANSELCbits.ANSC3 = 1; } while(0)
 #define SWITCH_SetDigitalMode()     do { ANSELCbits.ANSC3 = 0; } while(0)
+#define RC3_SetInterruptHandler  SWITCH_SetInterruptHandler
 /**
  * @ingroup  pinsdriver
  * @brief GPIO and peripheral I/O initialization
@@ -102,6 +103,46 @@ void PIN_MANAGER_Initialize (void);
  * @return none
  */
 void PIN_MANAGER_IOC(void);
+
+/**
+ * @ingroup  pinsdriver
+ * @brief Interrupt on Change Handler for the SWITCH pin functionality
+ * @param none
+ * @return none
+ */
+void SWITCH_ISR(void);
+
+/**
+ * @ingroup  pinsdriver
+ * @brief Interrupt Handler Setter for SWITCH pin interrupt-on-change functionality.
+ *        Allows selecting an interrupt handler for SWITCH at application runtime.
+ * @pre Pins intializer called
+ * @param InterruptHandler function pointer.
+ * @return none
+ */
+void SWITCH_SetInterruptHandler(void (* InterruptHandler)(void));
+
+/**
+ * @ingroup  pinsdriver
+ * @brief Dynamic Interrupt Handler for SWITCH pin.
+ *        This is a dynamic interrupt handler to be used together with the SWITCH_SetInterruptHandler() method.
+ *        This handler is called every time the SWITCH ISR is executed and allows any function to be registered at runtime.
+ * @pre Pins intializer called
+ * @param none
+ * @return none
+ */
+extern void (*SWITCH_InterruptHandler)(void);
+
+/**
+ * @ingroup  pinsdriver
+ * @brief Default Interrupt Handler for SWITCH pin. 
+ *        This is a predefined interrupt handler to be used together with the SWITCH_SetInterruptHandler() method.
+ *        This handler is called every time the SWITCH ISR is executed. 
+ * @pre Pins intializer called
+ * @param none
+ * @return none
+ */
+void SWITCH_DefaultInterruptHandler(void);
 
 
 #endif // PINS_H

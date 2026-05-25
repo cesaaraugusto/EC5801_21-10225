@@ -39,7 +39,7 @@
 #define CONSTANT_1 0xff
 
 /* Callbacks */
-void TMR0_Callback(void){
+void switch_interrupt(void){
     LED_Toggle();
 }
 
@@ -58,14 +58,11 @@ int main(void)
     // Enable the Peripheral Interrupts 
     INTERRUPT_PeripheralInterruptEnable(); 
 
-    /* Local variables */
-    uint8_t counter = CONSTANT_1;
-    const uint8_t check = CONSTANT_1;
+    //Defining interruption
+    SWITCH_SetInterruptHandler(switch_interrupt);
 
     while(1){
-        if(++counter == 61){
-            LED_Toggle();
-        }
+        
     }    
 }
 
