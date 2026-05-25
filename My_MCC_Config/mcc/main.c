@@ -53,21 +53,17 @@ int main(void)
 
     // Enable the Global Interrupts 
     INTERRUPT_GlobalInterruptEnable(); 
+    
 
     // Enable the Peripheral Interrupts 
     INTERRUPT_PeripheralInterruptEnable(); 
-
-    /* Setup for the timer*/
-    TMR0_PeriodMatchCallbackRegister(TMR0_Callback);
-    TMR0_TMRInterruptEnable();
-    TMR0_Start();
 
     /* Local variables */
     uint8_t counter = CONSTANT_1;
     const uint8_t check = CONSTANT_1;
 
     while(1){
-        if(++counter == 0xff){
+        if(++counter == 61){
             LED_Toggle();
         }
     }    

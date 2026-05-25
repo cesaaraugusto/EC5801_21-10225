@@ -8,34 +8,34 @@
 		},
 		"paths" : 
 		{
-			"cmake" : "C:/Users/Cesar/.mplab/app-finder/apps/cmake/v4.2.3/cmake-4.2.3-windows-x86_64/bin/cmake.exe",
-			"cpack" : "C:/Users/Cesar/.mplab/app-finder/apps/cmake/v4.2.3/cmake-4.2.3-windows-x86_64/bin/cpack.exe",
-			"ctest" : "C:/Users/Cesar/.mplab/app-finder/apps/cmake/v4.2.3/cmake-4.2.3-windows-x86_64/bin/ctest.exe",
-			"root" : "C:/Users/Cesar/.mplab/app-finder/apps/cmake/v4.2.3/cmake-4.2.3-windows-x86_64/share/cmake-4.2"
+			"cmake" : "C:/Users/Cesar/.mplab/app-finder/apps/cmake/v4.3.2/cmake-4.3.2-windows-x86_64/bin/cmake.exe",
+			"cpack" : "C:/Users/Cesar/.mplab/app-finder/apps/cmake/v4.3.2/cmake-4.3.2-windows-x86_64/bin/cpack.exe",
+			"ctest" : "C:/Users/Cesar/.mplab/app-finder/apps/cmake/v4.3.2/cmake-4.3.2-windows-x86_64/bin/ctest.exe",
+			"root" : "C:/Users/Cesar/.mplab/app-finder/apps/cmake/v4.3.2/cmake-4.3.2-windows-x86_64/share/cmake-4.3"
 		},
 		"version" : 
 		{
 			"isDirty" : false,
 			"major" : 4,
-			"minor" : 2,
-			"patch" : 3,
-			"string" : "4.2.3",
+			"minor" : 3,
+			"patch" : 2,
+			"string" : "4.3.2",
 			"suffix" : ""
 		}
 	},
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-a5af532818e4285c4a5f.json",
+			"jsonFile" : "codemodel-v2-5f1774963202ff5f1802.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
 				"major" : 2,
-				"minor" : 9
+				"minor" : 10
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-33039c5afed7c75bad80.json",
+			"jsonFile" : "cache-v2-d8a182190213bcce6680.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-fbaa9e1b17ec665e2f0c.json",
+			"jsonFile" : "cmakeFiles-v1-9c078de4d4beb12b6613.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -53,12 +53,12 @@
 			}
 		},
 		{
-			"jsonFile" : "toolchains-v1-07b26a61f320ef6d2997.json",
+			"jsonFile" : "toolchains-v1-2363a9e5a069d3c72b8e.json",
 			"kind" : "toolchains",
 			"version" : 
 			{
 				"major" : 1,
-				"minor" : 0
+				"minor" : 1
 			}
 		}
 	],
@@ -90,7 +90,7 @@
 				"responses" : 
 				[
 					{
-						"jsonFile" : "cache-v2-33039c5afed7c75bad80.json",
+						"jsonFile" : "cache-v2-d8a182190213bcce6680.json",
 						"kind" : "cache",
 						"version" : 
 						{
@@ -99,25 +99,25 @@
 						}
 					},
 					{
-						"jsonFile" : "codemodel-v2-a5af532818e4285c4a5f.json",
+						"jsonFile" : "codemodel-v2-5f1774963202ff5f1802.json",
 						"kind" : "codemodel",
 						"version" : 
 						{
 							"major" : 2,
-							"minor" : 9
+							"minor" : 10
 						}
 					},
 					{
-						"jsonFile" : "toolchains-v1-07b26a61f320ef6d2997.json",
+						"jsonFile" : "toolchains-v1-2363a9e5a069d3c72b8e.json",
 						"kind" : "toolchains",
 						"version" : 
 						{
 							"major" : 1,
-							"minor" : 0
+							"minor" : 1
 						}
 					},
 					{
-						"jsonFile" : "cmakeFiles-v1-fbaa9e1b17ec665e2f0c.json",
+						"jsonFile" : "cmakeFiles-v1-9c078de4d4beb12b6613.json",
 						"kind" : "cmakeFiles",
 						"version" : 
 						{

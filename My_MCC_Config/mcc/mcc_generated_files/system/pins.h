@@ -68,6 +68,25 @@
 #define LED_SetOpenDrain()       do { ODCONCbits.ODCC2 = 1; } while(0)
 #define LED_SetAnalogMode()      do { ANSELCbits.ANSC2 = 1; } while(0)
 #define LED_SetDigitalMode()     do { ANSELCbits.ANSC2 = 0; } while(0)
+// get/set IO_RC3 aliases
+#define SWITCH_TRIS                 TRISCbits.TRISC3
+#define SWITCH_LAT                  LATCbits.LATC3
+#define SWITCH_PORT                 PORTCbits.RC3
+#define SWITCH_WPU                  WPUCbits.WPUC3
+#define SWITCH_OD                   ODCONCbits.ODCC3
+#define SWITCH_ANS                  ANSELCbits.ANSC3
+#define SWITCH_SetHigh()            do { LATCbits.LATC3 = 1; } while(0)
+#define SWITCH_SetLow()             do { LATCbits.LATC3 = 0; } while(0)
+#define SWITCH_Toggle()             do { LATCbits.LATC3 = ~LATCbits.LATC3; } while(0)
+#define SWITCH_GetValue()           PORTCbits.RC3
+#define SWITCH_SetDigitalInput()    do { TRISCbits.TRISC3 = 1; } while(0)
+#define SWITCH_SetDigitalOutput()   do { TRISCbits.TRISC3 = 0; } while(0)
+#define SWITCH_SetPullup()          do { WPUCbits.WPUC3 = 1; } while(0)
+#define SWITCH_ResetPullup()        do { WPUCbits.WPUC3 = 0; } while(0)
+#define SWITCH_SetPushPull()        do { ODCONCbits.ODCC3 = 0; } while(0)
+#define SWITCH_SetOpenDrain()       do { ODCONCbits.ODCC3 = 1; } while(0)
+#define SWITCH_SetAnalogMode()      do { ANSELCbits.ANSC3 = 1; } while(0)
+#define SWITCH_SetDigitalMode()     do { ANSELCbits.ANSC3 = 0; } while(0)
 /**
  * @ingroup  pinsdriver
  * @brief GPIO and peripheral I/O initialization

@@ -2,11 +2,7 @@
 
 manifest_file_version: 1.0.0
 project: My_MCC_Config
-<<<<<<< HEAD
-creation_date: 2026-05-24T18:50:35.500-04:00[America/Caracas]
-=======
-creation_date: 2026-05-24T18:40:38.673-04:00[America/Caracas]
->>>>>>> cdff32dd1db46ffc9a68c8b0b24e1d5e891690d8
+creation_date: 2026-05-24T19:59:44.847-04:00[America/Caracas]
 operating_system: Windows 11
 mcc_mode: VSCodePlugin
 mcc_mode_version: Unknown
@@ -21,7 +17,10 @@ mcc_content_registries: https://registry.npmjs.org/
 device_library: {library_class: com.microchip.mcc.melody.Library, name: Melody, version: 2.10.1}
 packs: {name: N/A, version: N/A}
 modules:
+- {name: '@mchp-mcc/main-manager', type: MELODY, version: 3.1.2}
 - {name: '@mchp-mcc/pic-8bit', type: MELODY, version: 5.31.0}
 - {name: '@mchp-mcc/pic16-configuration-bits-v1', type: MELODY, version: 4.1.4}
 - {name: '@mchp-mcc/pic16-pin-manager', type: MELODY, version: 3.6.4}
+- {name: '@mchp-mcc/pin-content-processor', type: MELODY, version: 3.11.0}
+- {name: '@mchp-mcc/scf-pic8-interrupt-v2', type: MELODY, version: 5.2.12}
 - {name: '@mchp-mcc/scf-pic8-osc-v1', type: MELODY, version: 4.4.0}

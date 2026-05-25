@@ -23,6 +23,7 @@ set(CMAKE_C_COMPILER_ARCHITECTURE_ID "")
 
 
 
+
 set(CMAKE_AR "c:/Program Files/Microchip/xc8/v3.10/bin/xc8-ar.exe")
 set(CMAKE_C_COMPILER_AR "")
 set(CMAKE_RANLIB ":")

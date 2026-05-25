@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="C:\Users\oswy2\Documents\PIC\embedded_systems\apps\PIC16F13145\out\Blink\default.hex">
+  <executable name="E:\Documents\GitHub\EC5801_21-10225\out\Blink\default.hex">
     <memory name="program">
       <units>words</units>
       <length>8192</length>
-      <used>214</used>
-      <free>7978</free>
+      <used>118</used>
+      <free>8074</free>
     </memory>
     <memory name="data">
       <units>bytes</units>
       <length>1024</length>
-      <used>9</used>
-      <free>1015</free>
+      <used>7</used>
+      <free>1017</free>
     </memory>
   </executable>
 </project>
