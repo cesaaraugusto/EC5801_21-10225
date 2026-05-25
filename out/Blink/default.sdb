@@ -55,14 +55,14 @@
 "772
 [u S31 . 1 `S22 1 . 1 0 ]
 [v _LATCbits LATCbits `VES31  1 e 1 @26 ]
-[s S87 . 1 `uc 1 INTF 1 0 :1:0 
+[s S86 . 1 `uc 1 INTF 1 0 :1:0 
 `uc 1 . 1 0 :3:1 
 `uc 1 IOCIF 1 0 :1:4 
 `uc 1 TMR0IF 1 0 :1:5 
 ]
 "830
-[u S92 . 1 `S87 1 . 1 0 ]
-[v _PIR0bits PIR0bits `VES92  1 e 1 @140 ]
+[u S91 . 1 `S86 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES91  1 e 1 @140 ]
 "3063
 [v _OSCCON1 OSCCON1 `VEuc  1 e 1 @653 ]
 "3203
@@ -121,14 +121,14 @@
 [v _IOCCN IOCCN `VEuc  1 e 1 @7846 ]
 "17429
 [v _IOCCF IOCCF `VEuc  1 e 1 @7847 ]
+"39 E:\Documents\GitHub\EC5801_21-10225\My_MCC_Config\mcc\main.c
+[v _counter counter `uc  1 e 1 0 ]
 "38 E:\Documents\GitHub\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\interrupt.c
 [v _INT_InterruptHandler INT_InterruptHandler `*.37(v  1 e 2 0 ]
 "50 E:\Documents\GitHub\EC5801_21-10225\My_MCC_Config\mcc\main.c
 [v _main main `(i  1 e 2 0 ]
 {
-"62
-[v main@counter counter `uc  1 a 1 2 ]
-"70
+"66
 } 0
 "39 E:\Documents\GitHub\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\system.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]

@@ -674,7 +674,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; <" TOSL equ 01FEEh ;# ">
 "17927
 [; <" TOSH equ 01FEFh ;# ">
-"42 E:\Documents\GitHub\EC5801_21-10225\My_MCC_Config\mcc\main.c
+"39 E:\Documents\GitHub\EC5801_21-10225\My_MCC_Config\mcc\main.c
+[v _counter `uc ~T0 @X0 1 e ]
+[i _counter
+-> -> 0 `i `uc
+]
+"42
 [v _TMR0_Callback `(v ~T0 @X0 1 ef ]
 {
 [e :U _TMR0_Callback ]
@@ -701,34 +706,26 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
 "59
 [e = . . _INTCONbits 0 2 -> -> 1 `i `uc ]
-"62
-[v _counter `uc ~T0 @X0 1 a ]
-[e = _counter -> -> 255 `i `uc ]
-"63
-[v F6524 `Cuc ~T0 @X0 1 s check ]
-[i F6524
--> -> 255 `i `uc
-]
-"65
+"61
 [e :U 887 ]
 {
-"66
+"62
 [e $ ! == -> =+ _counter -> -> 1 `i `uc `i -> 61 `i 889  ]
 {
-"67
+"63
 [e :U 892 ]
 {
 [e = . . _LATCbits 0 2 -> ~ -> . . _LATCbits 0 2 `i `uc ]
 }
 [e :U 891 ]
-"68
+"64
 }
 [e :U 889 ]
-"69
+"65
 }
 [e :U 886 ]
 [e $U 887  ]
 [e :U 888 ]
-"70
+"66
 [e :UE 885 ]
 }

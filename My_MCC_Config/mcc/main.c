@@ -36,7 +36,7 @@
 #include "mcc_generated_files/system/system.h"
 #include <stdint.h>
 
-#define CONSTANT_1 0xff
+uint8_t counter = 0x00;
 
 /* Callbacks */
 void TMR0_Callback(void){
@@ -57,10 +57,6 @@ int main(void)
 
     // Enable the Peripheral Interrupts 
     INTERRUPT_PeripheralInterruptEnable(); 
-
-    /* Local variables */
-    uint8_t counter = CONSTANT_1;
-    const uint8_t check = CONSTANT_1;
 
     while(1){
         if(++counter == 61){
