@@ -2,7 +2,7 @@ from pathlib import Path
 from typing import TypeVar, Generic
 
 
-class fileManager():
+class file_manager():
 
     def __init__(self, path: Path) -> None:
         self.path = path
@@ -51,17 +51,3 @@ class fileManager():
                     contenido = self.path.open("a",encoding="utf-8").write(data)
             else:
                 contenido = self.path.write_text(data, encoding="utf-8")
-
-# prueba lectura
-directorio_binario = Path("archivo_binario_prueba.bin")
-directorio_texto = Path("archivo_texto_prueba.txt")
-manejador_archivos_binarios = fileManager(directorio_binario)
-print(manejador_archivos_binarios.read_file())
-manejador_archivos_texto = fileManager(directorio_texto)
-print(manejador_archivos_texto.read_file())
-
-# prueba escritura
-manejador_archivos_binarios.write_file(b'\x06')
-print(manejador_archivos_binarios.read_file())
-manejador_archivos_texto.write_file("\ny este es un archivo modificado por César García")
-print(manejador_archivos_texto.read_file())
