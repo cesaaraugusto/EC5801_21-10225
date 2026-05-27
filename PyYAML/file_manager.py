@@ -25,7 +25,7 @@ class file_manager():
                 return False # Fallo externo
     
     def read_file(self) -> None|bytes|str:    
-        if (self.path.exists() == False): # comprobación existencia archivo
+        if (self.path.exists() == False or self.path.is_file() == False): # comprobación existencia archivo
             return print("Ruta no valida")
 
         if (self.__is_binary(self.path) == True): # comprobación archivo binario
