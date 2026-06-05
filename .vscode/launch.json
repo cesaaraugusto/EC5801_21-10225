@@ -1,0 +1,18 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Iniciar Blink: default",
+            "type": "mplab-core-da",
+            "request": "launch",
+            "project": "Blink",
+            "configuration": "default",
+            "stopOnEntry": true,
+            "preLaunchTask": "Blink: default - Compilar",
+            "program": "${workspaceFolder}/out/Blink/default.elf"
+        }
+    ]
+}

@@ -29,16 +29,16 @@ endif()
 
 
 # Main target for this project
-add_executable(Blink_default_image_JvIwSu1_ ${Blink_default_library_list})
+add_executable(Blink_default_image_NKr2VHia ${Blink_default_library_list})
 
-set_target_properties(Blink_default_image_JvIwSu1_ PROPERTIES
+set_target_properties(Blink_default_image_NKr2VHia PROPERTIES
     OUTPUT_NAME "default"
     SUFFIX ".elf"
     ADDITIONAL_CLEAN_FILES "${output_extensions}"
     RUNTIME_OUTPUT_DIRECTORY "${Blink_default_output_dir}")
-target_link_libraries(Blink_default_image_JvIwSu1_ PRIVATE ${Blink_default_default_XC8_FILE_TYPE_link})
+target_link_libraries(Blink_default_image_NKr2VHia PRIVATE ${Blink_default_default_XC8_FILE_TYPE_link})
 
 # Add the link options from the rule file.
-Blink_default_link_rule( Blink_default_image_JvIwSu1_)
+Blink_default_link_rule( Blink_default_image_NKr2VHia)
 
 

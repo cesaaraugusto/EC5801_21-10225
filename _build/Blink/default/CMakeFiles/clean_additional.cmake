@@ -3,12 +3,12 @@ cmake_minimum_required(VERSION 3.16)
 
 if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "")
   file(REMOVE_RECURSE
-  "E:\\Documents\\GitHub\\EC5801_21-10225\\out\\Blink\\default.cmf"
-  "E:\\Documents\\GitHub\\EC5801_21-10225\\out\\Blink\\default.hex"
-  "E:\\Documents\\GitHub\\EC5801_21-10225\\out\\Blink\\default.hxl"
-  "E:\\Documents\\GitHub\\EC5801_21-10225\\out\\Blink\\default.mum"
-  "E:\\Documents\\GitHub\\EC5801_21-10225\\out\\Blink\\default.o"
-  "E:\\Documents\\GitHub\\EC5801_21-10225\\out\\Blink\\default.sdb"
-  "E:\\Documents\\GitHub\\EC5801_21-10225\\out\\Blink\\default.sym"
+  "C:\\Users\\Cesar\\Documents\\Github\\EC5801_21-10225\\out\\Blink\\default.cmf"
+  "C:\\Users\\Cesar\\Documents\\Github\\EC5801_21-10225\\out\\Blink\\default.hex"
+  "C:\\Users\\Cesar\\Documents\\Github\\EC5801_21-10225\\out\\Blink\\default.hxl"
+  "C:\\Users\\Cesar\\Documents\\Github\\EC5801_21-10225\\out\\Blink\\default.mum"
+  "C:\\Users\\Cesar\\Documents\\Github\\EC5801_21-10225\\out\\Blink\\default.o"
+  "C:\\Users\\Cesar\\Documents\\Github\\EC5801_21-10225\\out\\Blink\\default.sdb"
+  "C:\\Users\\Cesar\\Documents\\Github\\EC5801_21-10225\\out\\Blink\\default.sym"
   )
 endif()

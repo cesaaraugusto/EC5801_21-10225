@@ -7,34 +7,46 @@
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "4 c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"42 E:\Documents\GitHub\EC5801_21-10225\My_MCC_Config\mcc\main.c
-[v _switch_interrupt switch_interrupt `(v  1 e 1 0 ]
-"50
+"43 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\main.c
+[v _TMR0_Callback TMR0_Callback `(v  1 e 1 0 ]
+"51
 [v _main main `(i  1 e 2 0 ]
-"39 E:\Documents\GitHub\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\clock.c
+"39 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\clock.c
 [v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
-"40 E:\Documents\GitHub\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\interrupt.c
+"40 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\interrupt.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 "59
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
-"81
+"92
 [v _INT_CallBack INT_CallBack `(v  1 e 1 0 ]
-"90
+"101
 [v _INT_SetInterruptHandler INT_SetInterruptHandler `(v  1 e 1 0 ]
-"94
+"105
 [v _INT_DefaultInterruptHandler INT_DefaultInterruptHandler `(v  1 e 1 0 ]
-"39 E:\Documents\GitHub\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\pins.c
+"39 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\pins.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"116
+"117
 [v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
-"128
+"129
 [v _SWITCH_ISR SWITCH_ISR `(v  1 e 1 0 ]
-"143
+"144
 [v _SWITCH_SetInterruptHandler SWITCH_SetInterruptHandler `(v  1 e 1 0 ]
-"150
+"151
 [v _SWITCH_DefaultInterruptHandler SWITCH_DefaultInterruptHandler `(v  1 e 1 0 ]
-"39 E:\Documents\GitHub\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\system.c
+"39 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\system.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"45 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\timer\src\tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+"79
+[v _TMR0_Start TMR0_Start `(v  1 e 1 0 ]
+"118
+[v _TMR0_TMRInterruptEnable TMR0_TMRInterruptEnable `(v  1 e 1 0 ]
+"128
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+"137
+[v _TMR0_PeriodMatchCallbackRegister TMR0_PeriodMatchCallbackRegister `(v  1 e 1 0 ]
+"142
+[v _TMR0_DefaultCallback TMR0_DefaultCallback `(v  1 s 1 TMR0_DefaultCallback ]
 [s S47 . 1 `uc 1 INTEDG 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 PEIE 1 0 :1:6 
@@ -67,22 +79,56 @@
 "772
 [u S31 . 1 `S22 1 . 1 0 ]
 [v _LATCbits LATCbits `VES31  1 e 1 @26 ]
-[s S91 . 1 `uc 1 INTF 1 0 :1:0 
+[s S99 . 1 `uc 1 INTF 1 0 :1:0 
 `uc 1 . 1 0 :3:1 
 `uc 1 IOCIF 1 0 :1:4 
 `uc 1 TMR0IF 1 0 :1:5 
 ]
 "830
-[u S96 . 1 `S91 1 . 1 0 ]
-[v _PIR0bits PIR0bits `VES96  1 e 1 @140 ]
-[s S122 . 1 `uc 1 INTE 1 0 :1:0 
+[u S104 . 1 `S99 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES104  1 e 1 @140 ]
+[s S130 . 1 `uc 1 INTE 1 0 :1:0 
 `uc 1 . 1 0 :3:1 
 `uc 1 IOCIE 1 0 :1:4 
 `uc 1 TMR0IE 1 0 :1:5 
 ]
 "1116
-[u S127 . 1 `S122 1 . 1 0 ]
-[v _PIE0bits PIE0bits `VES127  1 e 1 @150 ]
+[u S135 . 1 `S130 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES135  1 e 1 @150 ]
+"2226
+[v _TMR0L TMR0L `VEuc  1 e 1 @412 ]
+"2364
+[v _TMR0H TMR0H `VEuc  1 e 1 @413 ]
+"2618
+[v _T0CON0 T0CON0 `VEuc  1 e 1 @414 ]
+[s S313 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 MD16 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"2652
+[s S319 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+`uc 1 T0MD16 1 0 :1:4 
+`uc 1 T0OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 T0EN 1 0 :1:7 
+]
+[s S325 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 T016BIT 1 0 :1:4 
+]
+[s S331 . 1 `uc 1 T0OUTPS0 1 0 :1:0 
+`uc 1 T0OUTPS1 1 0 :1:1 
+`uc 1 T0OUTPS2 1 0 :1:2 
+`uc 1 T0OUTPS3 1 0 :1:3 
+]
+[u S336 . 1 `S313 1 . 1 0 `S319 1 . 1 0 `S325 1 . 1 0 `S331 1 . 1 0 ]
+[v _T0CON0bits T0CON0bits `VES336  1 e 1 @414 ]
+"2742
+[v _T0CON1 T0CON1 `VEuc  1 e 1 @415 ]
 "3063
 [v _OSCCON1 OSCCON1 `VEuc  1 e 1 @653 ]
 "3203
@@ -93,6 +139,8 @@
 [v _OSCTUNE OSCTUNE `VEuc  1 e 1 @658 ]
 "3404
 [v _OSCFRQ OSCFRQ `VEuc  1 e 1 @659 ]
+"15104
+[v _RC0PPS RC0PPS `VEuc  1 e 1 @7580 ]
 "16188
 [v _ANSELA ANSELA `VEuc  1 e 1 @7820 ]
 "16266
@@ -141,7 +189,7 @@
 [v _IOCCN IOCCN `VEuc  1 e 1 @7846 ]
 "17429
 [v _IOCCF IOCCF `VEuc  1 e 1 @7847 ]
-[s S216 . 1 `uc 1 IOCCF0 1 0 :1:0 
+[s S233 . 1 `uc 1 IOCCF0 1 0 :1:0 
 `uc 1 IOCCF1 1 0 :1:1 
 `uc 1 IOCCF2 1 0 :1:2 
 `uc 1 IOCCF3 1 0 :1:3 
@@ -151,71 +199,104 @@
 `uc 1 IOCCF7 1 0 :1:7 
 ]
 "17446
-[u S225 . 1 `S216 1 . 1 0 ]
-[v _IOCCFbits IOCCFbits `VES225  1 e 1 @7847 ]
-"38 E:\Documents\GitHub\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\interrupt.c
+[u S242 . 1 `S233 1 . 1 0 ]
+[v _IOCCFbits IOCCFbits `VES242  1 e 1 @7847 ]
+"38 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\interrupt.c
 [v _INT_InterruptHandler INT_InterruptHandler `*.37(v  1 e 2 0 ]
-"37 E:\Documents\GitHub\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\pins.c
+"37 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\pins.c
 [v _SWITCH_InterruptHandler SWITCH_InterruptHandler `*.37(v  1 e 2 0 ]
-"50 E:\Documents\GitHub\EC5801_21-10225\My_MCC_Config\mcc\main.c
+"38 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\timer\src\tmr0.c
+[v _TMR0_PeriodMatchCallback TMR0_PeriodMatchCallback `*.37(v  1 s 2 TMR0_PeriodMatchCallback ]
+"51 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\main.c
 [v _main main `(i  1 e 2 0 ]
 {
-"67
+"72
 } 0
-"39 E:\Documents\GitHub\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\system.c
+"118 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\timer\src\tmr0.c
+[v _TMR0_TMRInterruptEnable TMR0_TMRInterruptEnable `(v  1 e 1 0 ]
+{
+"121
+} 0
+"79
+[v _TMR0_Start TMR0_Start `(v  1 e 1 0 ]
+{
+"82
+} 0
+"137
+[v _TMR0_PeriodMatchCallbackRegister TMR0_PeriodMatchCallbackRegister `(v  1 e 1 0 ]
+{
+[v TMR0_PeriodMatchCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 0 ]
+"140
+} 0
+"39 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\system.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
-"44
+"45
 } 0
-"39 E:\Documents\GitHub\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\pins.c
+"45 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\timer\src\tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+{
+"64
+} 0
+"39 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\pins.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
-"114
+"115
 } 0
-"143
+"144
 [v _SWITCH_SetInterruptHandler SWITCH_SetInterruptHandler `(v  1 e 1 0 ]
 {
 [v SWITCH_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
-"145
+"146
 } 0
-"40 E:\Documents\GitHub\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\interrupt.c
+"40 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\interrupt.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 {
 "50
 } 0
-"90
+"101
 [v _INT_SetInterruptHandler INT_SetInterruptHandler `(v  1 e 1 0 ]
 {
 [v INT_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
-"92
+"103
 } 0
-"39 E:\Documents\GitHub\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\clock.c
+"39 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\clock.c
 [v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
 {
 "54
 } 0
-"59 E:\Documents\GitHub\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\interrupt.c
+"59 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\interrupt.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
 {
-"70
+"81
 } 0
-"116 E:\Documents\GitHub\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\pins.c
+"128 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\timer\src\tmr0.c
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+{
+"135
+} 0
+"43 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\main.c
+[v _TMR0_Callback TMR0_Callback `(v  1 e 1 0 ]
+{
+"45
+} 0
+"142 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\timer\src\tmr0.c
+[v _TMR0_DefaultCallback TMR0_DefaultCallback `(v  1 s 1 TMR0_DefaultCallback ]
+{
+"145
+} 0
+"117 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\pins.c
 [v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
 {
-"123
+"124
 } 0
-"128
+"129
 [v _SWITCH_ISR SWITCH_ISR `(v  1 e 1 0 ]
 {
-"138
+"139
 } 0
-"150
+"151
 [v _SWITCH_DefaultInterruptHandler SWITCH_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
-"153
-} 0
-"42 E:\Documents\GitHub\EC5801_21-10225\My_MCC_Config\mcc\main.c
-[v _switch_interrupt switch_interrupt `(v  1 e 1 0 ]
-{
-"44
+"154
 } 0

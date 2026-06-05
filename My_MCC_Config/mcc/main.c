@@ -34,12 +34,13 @@
 */
 #include "mcc_generated_files/system/pins.h"
 #include "mcc_generated_files/system/system.h"
+#include "mcc_generated_files/timer/tmr0.h"
 #include <stdint.h>
 
 #define CONSTANT_1 0xff
 
 /* Callbacks */
-void switch_interrupt(void){
+void TMR0_Callback(void){
     LED_Toggle();
 }
 
@@ -59,10 +60,14 @@ int main(void)
     INTERRUPT_PeripheralInterruptEnable(); 
 
     //Defining interruption
-    SWITCH_SetInterruptHandler(switch_interrupt);
+    //SWITCH_SetInterruptHandler(switch_interrupt);
+
+    TMR0_PeriodMatchCallbackRegister(TMR0_Callback);
+    TMR0_TMRInterruptEnable();
+    TMR0_Start();
 
     while(1){
-        
+        SLEEP();
     }    
 }
 
