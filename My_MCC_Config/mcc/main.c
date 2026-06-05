@@ -31,17 +31,31 @@
     TOTAL LIABILITY ON ALL CLAIMS RELATED TO THE SOFTWARE WILL NOT 
     EXCEED AMOUNT OF FEES, IF ANY, YOU PAID DIRECTLY TO MICROCHIP FOR 
     THIS SOFTWARE.
-*/
+    */
 #include "mcc_generated_files/system/pins.h"
 #include "mcc_generated_files/system/system.h"
 #include "mcc_generated_files/timer/tmr0.h"
 #include <stdint.h>
-
+    
 #define CONSTANT_1 0xff
+#define DUTY_CYCLE_BASIC 8192
+    
+int contador = 0;
 
 /* Callbacks */
 void TMR0_Callback(void){
     LED_Toggle();
+}
+
+void switch_interrupt(void){
+    contador++;
+    if (contador >= 8){
+        contador = 1;
+    } else {
+        uint16_t new_duty_cycle = ((uint16_t)contador * DUTY_CYCLE_BASIC);
+        PWM1_LoadDutyValue(new_duty_cycle);
+    }
+
 }
 
 /*
@@ -60,7 +74,7 @@ int main(void)
     INTERRUPT_PeripheralInterruptEnable(); 
 
     //Defining interruption
-    //SWITCH_SetInterruptHandler(switch_interrupt);
+    SWITCH_SetInterruptHandler(switch_interrupt);
 
     TMR0_PeriodMatchCallbackRegister(TMR0_Callback);
     TMR0_TMRInterruptEnable();

@@ -53,12 +53,16 @@ TMR2_PWM2OUT 30
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "4 c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"43 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\main.c
+"46 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\main.c
 [v _TMR0_Callback TMR0_Callback `(v  1 e 1 0 ]
-"51
+"50
+[v _switch_interrupt switch_interrupt `(v  1 e 1 0 ]
+"65
 [v _main main `(i  1 e 2 0 ]
 "45 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\pwm\src\pwm1.c
 [v _PWM1_Initialize PWM1_Initialize `(v  1 e 1 0 ]
+"63
+[v _PWM1_LoadDutyValue PWM1_LoadDutyValue `(v  1 e 1 0 ]
 "39 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\clock.c
 [v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
 "40 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\interrupt.c
@@ -101,14 +105,14 @@ TMR2_PWM2OUT 30
 [v _TMR2_Start TMR2_Start `(v  1 e 1 0 ]
 "162
 [v _TMR2_DefaultPeriodMatchCallback TMR2_DefaultPeriodMatchCallback `(v  1 s 1 TMR2_DefaultPeriodMatchCallback ]
-[s S47 . 1 `uc 1 INTEDG 1 0 :1:0 
+[s S52 . 1 `uc 1 INTEDG 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
 "354 C:/Users/Cesar/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.29.444/xc8\pic\include\proc/pic16f13145.h
-[u S52 . 1 `S47 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES52  1 e 1 @11 ]
+[u S57 . 1 `S52 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES57  1 e 1 @11 ]
 "525
 [v _TRISA TRISA `VEuc  1 e 1 @18 ]
 "570
@@ -133,72 +137,72 @@ TMR2_PWM2OUT 30
 "772
 [u S31 . 1 `S22 1 . 1 0 ]
 [v _LATCbits LATCbits `VES31  1 e 1 @26 ]
-[s S120 . 1 `uc 1 INTF 1 0 :1:0 
+[s S134 . 1 `uc 1 INTF 1 0 :1:0 
 `uc 1 . 1 0 :3:1 
 `uc 1 IOCIF 1 0 :1:4 
 `uc 1 TMR0IF 1 0 :1:5 
 ]
 "830
-[u S125 . 1 `S120 1 . 1 0 ]
-[v _PIR0bits PIR0bits `VES125  1 e 1 @140 ]
-[s S432 . 1 `uc 1 . 1 0 :2:0 
+[u S139 . 1 `S134 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES139  1 e 1 @140 ]
+[s S442 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 TMR2IF 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 CCP1IF 1 0 :1:5 
 `uc 1 CCP2IF 1 0 :1:6 
 ]
 "921
-[u S438 . 1 `S432 1 . 1 0 ]
-[v _PIR2bits PIR2bits `VES438  1 e 1 @142 ]
-[s S151 . 1 `uc 1 INTE 1 0 :1:0 
+[u S448 . 1 `S442 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES448  1 e 1 @142 ]
+[s S165 . 1 `uc 1 INTE 1 0 :1:0 
 `uc 1 . 1 0 :3:1 
 `uc 1 IOCIE 1 0 :1:4 
 `uc 1 TMR0IE 1 0 :1:5 
 ]
 "1116
-[u S156 . 1 `S151 1 . 1 0 ]
-[v _PIE0bits PIE0bits `VES156  1 e 1 @150 ]
-[s S504 . 1 `uc 1 . 1 0 :2:0 
+[u S170 . 1 `S165 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES170  1 e 1 @150 ]
+[s S514 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 TMR2IE 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 CCP1IE 1 0 :1:5 
 `uc 1 CCP2IE 1 0 :1:6 
 ]
 "1207
-[u S510 . 1 `S504 1 . 1 0 ]
-[v _PIE2bits PIE2bits `VES510  1 e 1 @152 ]
+[u S520 . 1 `S514 1 . 1 0 ]
+[v _PIE2bits PIE2bits `VES520  1 e 1 @152 ]
 "2226
 [v _TMR0L TMR0L `VEuc  1 e 1 @412 ]
 "2364
 [v _TMR0H TMR0H `VEuc  1 e 1 @413 ]
 "2618
 [v _T0CON0 T0CON0 `VEuc  1 e 1 @414 ]
-[s S341 . 1 `uc 1 OUTPS 1 0 :4:0 
+[s S351 . 1 `uc 1 OUTPS 1 0 :4:0 
 `uc 1 MD16 1 0 :1:4 
 `uc 1 OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 EN 1 0 :1:7 
 ]
 "2652
-[s S347 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+[s S357 . 1 `uc 1 T0OUTPS 1 0 :4:0 
 `uc 1 T0MD16 1 0 :1:4 
 `uc 1 T0OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 T0EN 1 0 :1:7 
 ]
-[s S353 . 1 `uc 1 OUTPS0 1 0 :1:0 
+[s S363 . 1 `uc 1 OUTPS0 1 0 :1:0 
 `uc 1 OUTPS1 1 0 :1:1 
 `uc 1 OUTPS2 1 0 :1:2 
 `uc 1 OUTPS3 1 0 :1:3 
 `uc 1 T016BIT 1 0 :1:4 
 ]
-[s S359 . 1 `uc 1 T0OUTPS0 1 0 :1:0 
+[s S369 . 1 `uc 1 T0OUTPS0 1 0 :1:0 
 `uc 1 T0OUTPS1 1 0 :1:1 
 `uc 1 T0OUTPS2 1 0 :1:2 
 `uc 1 T0OUTPS3 1 0 :1:3 
 ]
-[u S364 . 1 `S341 1 . 1 0 `S347 1 . 1 0 `S353 1 . 1 0 `S359 1 . 1 0 ]
-[v _T0CON0bits T0CON0bits `VES364  1 e 1 @414 ]
+[u S374 . 1 `S351 1 . 1 0 `S357 1 . 1 0 `S363 1 . 1 0 `S369 1 . 1 0 ]
+[v _T0CON0bits T0CON0bits `VES374  1 e 1 @414 ]
 "2742
 [v _T0CON1 T0CON1 `VEuc  1 e 1 @415 ]
 "3063
@@ -217,16 +221,16 @@ TMR2_PWM2OUT 30
 [v _T2PR T2PR `VEuc  1 e 1 @909 ]
 "4473
 [v _T2CON T2CON `VEuc  1 e 1 @910 ]
-[s S448 . 1 `uc 1 OUTPS 1 0 :4:0 
+[s S458 . 1 `uc 1 OUTPS 1 0 :4:0 
 `uc 1 CKPS 1 0 :3:4 
 `uc 1 ON 1 0 :1:7 
 ]
 "4509
-[s S452 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+[s S462 . 1 `uc 1 T2OUTPS 1 0 :4:0 
 `uc 1 T2CKPS 1 0 :3:4 
 `uc 1 T2ON 1 0 :1:7 
 ]
-[s S456 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+[s S466 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
 `uc 1 T2OUTPS1 1 0 :1:1 
 `uc 1 T2OUTPS2 1 0 :1:2 
 `uc 1 T2OUTPS3 1 0 :1:3 
@@ -234,7 +238,7 @@ TMR2_PWM2OUT 30
 `uc 1 T2CKPS1 1 0 :1:5 
 `uc 1 T2CKPS2 1 0 :1:6 
 ]
-[s S464 . 1 `uc 1 OUTPS0 1 0 :1:0 
+[s S474 . 1 `uc 1 OUTPS0 1 0 :1:0 
 `uc 1 OUTPS1 1 0 :1:1 
 `uc 1 OUTPS2 1 0 :1:2 
 `uc 1 OUTPS3 1 0 :1:3 
@@ -243,17 +247,17 @@ TMR2_PWM2OUT 30
 `uc 1 CKPS2 1 0 :1:6 
 `uc 1 TMR2ON 1 0 :1:7 
 ]
-[u S473 . 1 `S448 1 . 1 0 `S452 1 . 1 0 `S456 1 . 1 0 `S464 1 . 1 0 ]
-[v _T2CONbits T2CONbits `VES473  1 e 1 @910 ]
+[u S483 . 1 `S458 1 . 1 0 `S462 1 . 1 0 `S466 1 . 1 0 `S474 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES483  1 e 1 @910 ]
 "4619
 [v _T2HLT T2HLT `VEuc  1 e 1 @911 ]
-[s S541 . 1 `uc 1 MODE 1 0 :5:0 
+[s S551 . 1 `uc 1 MODE 1 0 :5:0 
 `uc 1 CSYNC 1 0 :1:5 
 `uc 1 CPOL 1 0 :1:6 
 `uc 1 PSYNC 1 0 :1:7 
 ]
 "4654
-[s S546 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S556 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 MODE3 1 0 :1:3 
@@ -261,54 +265,54 @@ TMR2_PWM2OUT 30
 `uc 1 CKSYNC 1 0 :1:5 
 `uc 1 CKPOL 1 0 :1:6 
 ]
-[s S554 . 1 `uc 1 T2MODE 1 0 :5:0 
+[s S564 . 1 `uc 1 T2MODE 1 0 :5:0 
 `uc 1 T2CSYNC 1 0 :1:5 
 `uc 1 T2CPOL 1 0 :1:6 
 `uc 1 T2PSYNC 1 0 :1:7 
 ]
-[s S559 . 1 `uc 1 T2MODE0 1 0 :1:0 
+[s S569 . 1 `uc 1 T2MODE0 1 0 :1:0 
 `uc 1 T2MODE1 1 0 :1:1 
 `uc 1 T2MODE2 1 0 :1:2 
 `uc 1 T2MODE3 1 0 :1:3 
 `uc 1 T2MODE4 1 0 :1:4 
 ]
-[u S565 . 1 `S541 1 . 1 0 `S546 1 . 1 0 `S554 1 . 1 0 `S559 1 . 1 0 ]
-[v _T2HLTbits T2HLTbits `VES565  1 e 1 @911 ]
+[u S575 . 1 `S551 1 . 1 0 `S556 1 . 1 0 `S564 1 . 1 0 `S569 1 . 1 0 ]
+[v _T2HLTbits T2HLTbits `VES575  1 e 1 @911 ]
 "4759
 [v _T2CLKCON T2CLKCON `VEuc  1 e 1 @912 ]
 "4941
 [v _T2RST T2RST `VEuc  1 e 1 @913 ]
-[s S615 . 1 `uc 1 RSEL 1 0 :8:0 
+[s S625 . 1 `uc 1 RSEL 1 0 :8:0 
 ]
 "4968
-[s S617 . 1 `uc 1 RSEL0 1 0 :1:0 
+[s S627 . 1 `uc 1 RSEL0 1 0 :1:0 
 `uc 1 RSEL1 1 0 :1:1 
 `uc 1 RSEL2 1 0 :1:2 
 `uc 1 RSEL3 1 0 :1:3 
 `uc 1 RSEL4 1 0 :1:4 
 ]
-[s S623 . 1 `uc 1 T2RSEL 1 0 :8:0 
+[s S633 . 1 `uc 1 T2RSEL 1 0 :8:0 
 ]
-[s S625 . 1 `uc 1 T2RSEL0 1 0 :1:0 
+[s S635 . 1 `uc 1 T2RSEL0 1 0 :1:0 
 `uc 1 T2RSEL1 1 0 :1:1 
 `uc 1 T2RSEL2 1 0 :1:2 
 `uc 1 T2RSEL3 1 0 :1:3 
 `uc 1 T2RSEL4 1 0 :1:4 
 ]
-[u S631 . 1 `S615 1 . 1 0 `S617 1 . 1 0 `S623 1 . 1 0 `S625 1 . 1 0 ]
-[v _T2RSTbits T2RSTbits `VES631  1 e 1 @913 ]
+[u S641 . 1 `S625 1 . 1 0 `S627 1 . 1 0 `S633 1 . 1 0 `S635 1 . 1 0 ]
+[v _T2RSTbits T2RSTbits `VES641  1 e 1 @913 ]
 "8462
 [v _PWM1DCL PWM1DCL `VEuc  1 e 1 @2080 ]
 "8483
 [v _PWM1DCH PWM1DCH `VEuc  1 e 1 @2081 ]
 "8503
 [v _PWM1CON PWM1CON `VEuc  1 e 1 @2082 ]
-[s S99 . 1 `uc 1 P1TSEL 1 0 :2:0 
+[s S113 . 1 `uc 1 P1TSEL 1 0 :2:0 
 `uc 1 P2TSEL 1 0 :2:2 
 ]
 "8674
-[u S102 . 1 `S99 1 . 1 0 ]
-[v _PWMTMRS0bits PWMTMRS0bits `VES102  1 e 1 @2095 ]
+[u S116 . 1 `S113 1 . 1 0 ]
+[v _PWMTMRS0bits PWMTMRS0bits `VES116  1 e 1 @2095 ]
 "15104
 [v _RC0PPS RC0PPS `VEuc  1 e 1 @7580 ]
 "15124
@@ -361,7 +365,7 @@ TMR2_PWM2OUT 30
 [v _IOCCN IOCCN `VEuc  1 e 1 @7846 ]
 "17429
 [v _IOCCF IOCCF `VEuc  1 e 1 @7847 ]
-[s S255 . 1 `uc 1 IOCCF0 1 0 :1:0 
+[s S265 . 1 `uc 1 IOCCF0 1 0 :1:0 
 `uc 1 IOCCF1 1 0 :1:1 
 `uc 1 IOCCF2 1 0 :1:2 
 `uc 1 IOCCF3 1 0 :1:3 
@@ -371,8 +375,10 @@ TMR2_PWM2OUT 30
 `uc 1 IOCCF7 1 0 :1:7 
 ]
 "17446
-[u S264 . 1 `S255 1 . 1 0 ]
-[v _IOCCFbits IOCCFbits `VES264  1 e 1 @7847 ]
+[u S274 . 1 `S265 1 . 1 0 ]
+[v _IOCCFbits IOCCFbits `VES274  1 e 1 @7847 ]
+"43 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\main.c
+[v _contador contador `i  1 e 2 0 ]
 "38 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\interrupt.c
 [v _INT_InterruptHandler INT_InterruptHandler `*.37(v  1 e 2 0 ]
 "37 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\pins.c
@@ -381,10 +387,10 @@ TMR2_PWM2OUT 30
 [v _TMR0_PeriodMatchCallback TMR0_PeriodMatchCallback `*.37(v  1 s 2 TMR0_PeriodMatchCallback ]
 "43 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\timer\src\tmr2.c
 [v _TMR2_PeriodMatchCallback TMR2_PeriodMatchCallback `*.37(v  1 s 2 TMR2_PeriodMatchCallback ]
-"51 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\main.c
+"65 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\main.c
 [v _main main `(i  1 e 2 0 ]
 {
-"73
+"87
 } 0
 "90 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\timer\src\tmr2.c
 [v _TMR2_Start TMR2_Start `(v  1 e 1 0 ]
@@ -464,10 +470,10 @@ TMR2_PWM2OUT 30
 {
 "135
 } 0
-"43 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\main.c
+"46 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\main.c
 [v _TMR0_Callback TMR0_Callback `(v  1 e 1 0 ]
 {
-"45
+"48
 } 0
 "142 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\timer\src\tmr0.c
 [v _TMR0_DefaultCallback TMR0_DefaultCallback `(v  1 s 1 TMR0_DefaultCallback ]
@@ -488,4 +494,17 @@ TMR2_PWM2OUT 30
 [v _SWITCH_DefaultInterruptHandler SWITCH_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
 "155
+} 0
+"50 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\main.c
+[v _switch_interrupt switch_interrupt `(v  1 e 1 0 ]
+{
+"55
+[v switch_interrupt@new_duty_cycle new_duty_cycle `us  1 a 2 6 ]
+"59
+} 0
+"63 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\pwm\src\pwm1.c
+[v _PWM1_LoadDutyValue PWM1_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM1_LoadDutyValue@dutyValue dutyValue `us  1 p 2 0 ]
+"70
 } 0

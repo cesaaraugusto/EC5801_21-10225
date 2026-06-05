@@ -7,6 +7,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [n S48 . . ]
 "772
 [v _LATCbits `VS48 ~T0 @X0 0 e@26 ]
+"65 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc/mcc_generated_files/system/../pwm/pwm1.h
+[v _PWM1_LoadDutyValue `(v ~T0 @X0 0 ef1`us ]
 [p mainexit ]
 "57 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc/mcc_generated_files/system/system.h
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
@@ -18,6 +20,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [n S30 . . ]
 "354
 [v _INTCONbits `VS30 ~T0 @X0 0 e@11 ]
+[v F6511 `(v ~T0 @X0 0 tf ]
+"161 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc/mcc_generated_files/system/pins.h
+[v _SWITCH_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F6511 ]
 [v F6546 `(v ~T0 @X0 0 tf ]
 "264 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc/mcc_generated_files/system/../timer/tmr0.h
 [v _TMR0_PeriodMatchCallbackRegister `(v ~T0 @X0 0 ef1`*F6546 ]
@@ -684,48 +689,83 @@ Version 4.0 HI-TECH Software Intermediate Code
 "17927
 [; <" TOSH equ 01FEFh ;# ">
 "43 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\main.c
+[v _contador `i ~T0 @X0 1 e ]
+[i _contador
+-> 0 `i
+]
+"46
 [v _TMR0_Callback `(v ~T0 @X0 1 ef ]
 {
 [e :U _TMR0_Callback ]
 [f ]
-"44
+"47
 [e :U 884 ]
 {
 [e = . . _LATCbits 0 2 -> ~ -> . . _LATCbits 0 2 `i `uc ]
 }
 [e :U 883 ]
-"45
+"48
 [e :UE 881 ]
 }
-[v $root$_main `(v ~T0 @X0 0 e ]
+"50
+[v _switch_interrupt `(v ~T0 @X0 1 ef ]
+{
+[e :U _switch_interrupt ]
+[f ]
 "51
-[v _main `(i ~T0 @X0 1 ef ]
+[e ++ _contador -> 1 `i ]
 "52
+[e $ ! >= _contador -> 8 `i 886  ]
+{
+"53
+[e = _contador -> 1 `i ]
+"54
+}
+[e $U 887  ]
+[e :U 886 ]
+{
+"55
+[v _new_duty_cycle `us ~T0 @X0 1 a ]
+[e = _new_duty_cycle -> * -> -> _contador `us `ui -> -> 8192 `i `ui `us ]
+"56
+[e ( _PWM1_LoadDutyValue (1 _new_duty_cycle ]
+"57
+}
+[e :U 887 ]
+"59
+[e :UE 885 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"65
+[v _main `(i ~T0 @X0 1 ef ]
+"66
 {
 [e :U _main ]
 [f ]
-"53
-[e ( _SYSTEM_Initialize ..  ]
-"56
-[e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
-"60
-[e = . . _INTCONbits 0 2 -> -> 1 `i `uc ]
-"65
-[e ( _TMR0_PeriodMatchCallbackRegister (1 &U _TMR0_Callback ]
-"66
-[e ( _TMR0_TMRInterruptEnable ..  ]
 "67
-[e ( _TMR0_Start ..  ]
-"68
-[e ( _TMR2_Start ..  ]
+[e ( _SYSTEM_Initialize ..  ]
 "70
-[e :U 887 ]
+[e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
+"74
+[e = . . _INTCONbits 0 2 -> -> 1 `i `uc ]
+"77
+[e ( _SWITCH_SetInterruptHandler (1 &U _switch_interrupt ]
+"79
+[e ( _TMR0_PeriodMatchCallbackRegister (1 &U _TMR0_Callback ]
+"80
+[e ( _TMR0_TMRInterruptEnable ..  ]
+"81
+[e ( _TMR0_Start ..  ]
+"82
+[e ( _TMR2_Start ..  ]
+"84
+[e :U 890 ]
 {
-"72
+"86
 }
-[e :U 886 ]
-[e $U 887  ]
-[e :U 888 ]
-"73
-[e :UE 885 ]
+[e :U 889 ]
+[e $U 890  ]
+[e :U 891 ]
+"87
+[e :UE 888 ]
 }
