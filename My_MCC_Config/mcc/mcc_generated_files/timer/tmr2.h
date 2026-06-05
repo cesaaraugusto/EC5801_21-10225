@@ -56,7 +56,7 @@
  * @brief Defines the TMR2 prescaled clock frequency in hertz.
  */
 /* cppcheck-suppress misra-c2012-2.5 */
-#define TMR2_CLOCK_FREQ (1937UL)
+#define TMR2_CLOCK_FREQ (31000UL)
 /**
  * @ingroup tmr2
  * @brief Defines the Custom Name for the \ref TMR2_MAX_COUNT.

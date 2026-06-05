@@ -761,7 +761,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "59
 [e = _T2RST -> << -> 0 `i -> 0 `i `uc ]
 "61
-[e = _T2PR -> -> 96 `i `uc ]
+[e = _T2PR -> -> 255 `i `uc ]
 "63
 [e = _T2TMR -> -> 0 `i `uc ]
 "65
@@ -769,7 +769,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "67
 [e = . . _PIR2bits 0 1 -> -> 0 `ui `uc ]
 "70
-[e = _T2CON -> | | << -> 4 `i -> 4 `i << -> 1 `i -> 7 `i << -> 0 `i -> 0 `i `uc ]
+[e = _T2CON -> | | << -> 0 `i -> 4 `i << -> 1 `i -> 7 `i << -> 0 `i -> 0 `i `uc ]
 "73
 [e :UE 881 ]
 }

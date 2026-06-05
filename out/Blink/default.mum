@@ -1,6 +1,6 @@
 
 16F13145 Memory Summary:
-    Program space        used   177h (   375) of  2000h words   (  4.6%)
+    Program space        used   17Ch (   380) of  2000h words   (  4.6%)
     Data space           used    16h (    22) of   400h bytes   (  2.1%)
     EEPROM space         None available
     Configuration bits   used     5h (     5) of     5h words   (100.0%)

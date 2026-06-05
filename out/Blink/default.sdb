@@ -55,9 +55,9 @@ TMR2_PWM2OUT 30
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
 "46 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\main.c
 [v _TMR0_Callback TMR0_Callback `(v  1 e 1 0 ]
-"50
+"51
 [v _switch_interrupt switch_interrupt `(v  1 e 1 0 ]
-"65
+"67
 [v _main main `(i  1 e 2 0 ]
 "45 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\pwm\src\pwm1.c
 [v _PWM1_Initialize PWM1_Initialize `(v  1 e 1 0 ]
@@ -387,10 +387,10 @@ TMR2_PWM2OUT 30
 [v _TMR0_PeriodMatchCallback TMR0_PeriodMatchCallback `*.37(v  1 s 2 TMR0_PeriodMatchCallback ]
 "43 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\timer\src\tmr2.c
 [v _TMR2_PeriodMatchCallback TMR2_PeriodMatchCallback `*.37(v  1 s 2 TMR2_PeriodMatchCallback ]
-"65 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\main.c
+"67 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\main.c
 [v _main main `(i  1 e 2 0 ]
 {
-"87
+"89
 } 0
 "90 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\timer\src\tmr2.c
 [v _TMR2_Start TMR2_Start `(v  1 e 1 0 ]
@@ -495,12 +495,12 @@ TMR2_PWM2OUT 30
 {
 "155
 } 0
-"50 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\main.c
+"51 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\main.c
 [v _switch_interrupt switch_interrupt `(v  1 e 1 0 ]
 {
-"55
+"57
 [v switch_interrupt@new_duty_cycle new_duty_cycle `us  1 a 2 6 ]
-"59
+"61
 } 0
 "63 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\pwm\src\pwm1.c
 [v _PWM1_LoadDutyValue PWM1_LoadDutyValue `(v  1 e 1 0 ]

@@ -38,7 +38,7 @@
 #include <stdint.h>
     
 #define CONSTANT_1 0xff
-#define DUTY_CYCLE_BASIC 8192
+#define DUTY_CYCLE_BASIC 128
     
 int contador = 0;
 
@@ -47,40 +47,42 @@ void TMR0_Callback(void){
     LED_Toggle();
 }
 
+
 void switch_interrupt(void){
     contador++;
     if (contador >= 8){
-        contador = 1;
+        contador = 0;
+        PWM1_LoadDutyValue(DUTY_CYCLE_BASIC);
     } else {
         uint16_t new_duty_cycle = ((uint16_t)contador * DUTY_CYCLE_BASIC);
         PWM1_LoadDutyValue(new_duty_cycle);
     }
-
-}
-
-/*
-    Main application
-*/
-
-int main(void)
-{
-    SYSTEM_Initialize();
-
-    // Enable the Global Interrupts 
-    INTERRUPT_GlobalInterruptEnable(); 
-    
-
-    // Enable the Peripheral Interrupts 
-    INTERRUPT_PeripheralInterruptEnable(); 
-
-    //Defining interruption
-    SWITCH_SetInterruptHandler(switch_interrupt);
-
-    TMR0_PeriodMatchCallbackRegister(TMR0_Callback);
-    TMR0_TMRInterruptEnable();
-    TMR0_Start();
-    TMR2_Start();
-
+            
+        }
+        
+        /*
+        Main application
+        */
+        
+        int main(void)
+        {
+            SYSTEM_Initialize();
+            
+            // Enable the Global Interrupts 
+            INTERRUPT_GlobalInterruptEnable(); 
+            
+            
+            // Enable the Peripheral Interrupts 
+            INTERRUPT_PeripheralInterruptEnable(); 
+            
+            //Defining interruption
+            SWITCH_SetInterruptHandler(switch_interrupt);
+            
+            TMR0_PeriodMatchCallbackRegister(TMR0_Callback);
+            TMR0_TMRInterruptEnable();
+            TMR0_Start();
+            TMR2_Start();
+            
     while(1){
        // SLEEP();
     }    

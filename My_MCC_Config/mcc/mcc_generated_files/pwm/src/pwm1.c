@@ -49,11 +49,11 @@
     // PWMPOL active_hi; PWMEN enabled; 
     PWM1CON = (uint8_t)0x80;
     
-    // PWMDCH 48; 
-    PWM1DCH = (uint8_t)0x30;
+    // PWMDCH 127; 
+    PWM1DCH = (uint8_t)0x7F;
 
-    // PWMDCL 1; 
-    PWM1DCL = (uint8_t)0x40;
+    // PWMDCL 3; 
+    PWM1DCL = (uint8_t)0xC0;
     
 
 
