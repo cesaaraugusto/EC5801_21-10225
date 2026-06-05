@@ -1,0 +1,25 @@
+# ninja log v7
+35	282	7979735906826662	CMakeFiles/Blink_default_default_XC8_compile.dir/14d7dc7d071a40f56792ce36a433d623/apps/PIC16F13145/My_MCC_Config/mcc/mcc_generated_files/system/src/config_bits.c.p1	797c3588342b954d
+48	352	7979735906962068	CMakeFiles/Blink_default_default_XC8_compile.dir/14d7dc7d071a40f56792ce36a433d623/apps/PIC16F13145/My_MCC_Config/mcc/mcc_generated_files/system/src/pins.c.p1	1bcd3a912449eb0
+30	354	7979735906776661	CMakeFiles/Blink_default_default_XC8_compile.dir/14d7dc7d071a40f56792ce36a433d623/apps/PIC16F13145/My_MCC_Config/mcc/mcc_generated_files/system/src/clock.c.p1	b8f75135141770bb
+54	360	7979735907022159	CMakeFiles/Blink_default_default_XC8_compile.dir/14d7dc7d071a40f56792ce36a433d623/apps/PIC16F13145/My_MCC_Config/mcc/mcc_generated_files/system/src/system.c.p1	4a7cc5a0051973db
+59	362	7979735907072748	CMakeFiles/Blink_default_default_XC8_compile.dir/14d7dc7d071a40f56792ce36a433d623/apps/PIC16F13145/My_MCC_Config/mcc/mcc_generated_files/timer/src/tmr0.c.p1	90db34ced3df81d8
+5	325	7979861541565310	CMakeFiles/Blink_default_default_XC8_compile.dir/C_/Users/oswy2/Documents/PIC/embedded_systems/apps/PIC16F13145/My_MCC_Config/mcc/main.c.p1	15bb3efb61b2cc79
+42	358	7979735906901923	CMakeFiles/Blink_default_default_XC8_compile.dir/14d7dc7d071a40f56792ce36a433d623/apps/PIC16F13145/My_MCC_Config/mcc/mcc_generated_files/system/src/interrupt.c.p1	9e4e31bc81e6b330
+326	1382	7979861544776149	C:/Users/oswy2/Documents/PIC/embedded_systems/apps/PIC16F13145/out/Blink/default.elf	22b9705ab011d324
+35	1149	8013704098666866	build.ninja	81695641cfd2ffa
+35	1149	8003018257871447	C:/Users/oswy2/Documents/PIC/embedded_systems/apps/PIC16F13145/_build/Blink/default/cmake_install.cmake	81695641cfd2ffa
+123	2096	8013705843258522	CMakeFiles/Blink_default_default_XC8_compile.dir/E_/Documents/GitHub/EC5801_21-10225/My_MCC_Config/mcc/mcc_generated_files/system/src/config_bits.c.p1	697ad352a24d7e3b
+138	2368	8013705843410125	CMakeFiles/Blink_default_default_XC8_compile.dir/E_/Documents/GitHub/EC5801_21-10225/My_MCC_Config/mcc/mcc_generated_files/system/src/pins.c.p1	568824df121ea4f5
+129	2534	8013705843313675	CMakeFiles/Blink_default_default_XC8_compile.dir/E_/Documents/GitHub/EC5801_21-10225/My_MCC_Config/mcc/mcc_generated_files/system/src/interrupt.c.p1	189d5664bd5dbc8d
+117	2554	8013705843193230	CMakeFiles/Blink_default_default_XC8_compile.dir/E_/Documents/GitHub/EC5801_21-10225/My_MCC_Config/mcc/mcc_generated_files/system/src/clock.c.p1	df6b51dfe0fae36b
+147	2571	8013705843495303	CMakeFiles/Blink_default_default_XC8_compile.dir/E_/Documents/GitHub/EC5801_21-10225/My_MCC_Config/mcc/mcc_generated_files/system/src/system.c.p1	b0b83744c922745f
+60	744	8013706281495942	CMakeFiles/Blink_default_default_XC8_compile.dir/E_/Documents/GitHub/EC5801_21-10225/My_MCC_Config/mcc/main.c.p1	798ef797cc2b52c8
+745	4558	8013706288329590	E:/Documents/GitHub/EC5801_21-10225/out/Blink/default.elf	3228b55426ce1bc9
+8	999	8013711443670269	CMakeFiles/Blink_default_default_XC8_compile.dir/E_/Documents/GitHub/EC5801_21-10225/My_MCC_Config/mcc/main.c.p1	798ef797cc2b52c8
+1000	3419	8013711453594750	E:/Documents/GitHub/EC5801_21-10225/out/Blink/default.elf	3228b55426ce1bc9
+106	1674	8013717496592364	CMakeFiles/Blink_default_default_XC8_compile.dir/E_/Documents/GitHub/EC5801_21-10225/My_MCC_Config/mcc/mcc_generated_files/system/src/interrupt.c.p1	189d5664bd5dbc8d
+129	1779	8013717496808425	CMakeFiles/Blink_default_default_XC8_compile.dir/E_/Documents/GitHub/EC5801_21-10225/My_MCC_Config/mcc/mcc_generated_files/system/src/system.c.p1	b0b83744c922745f
+115	1919	8013717496672627	CMakeFiles/Blink_default_default_XC8_compile.dir/E_/Documents/GitHub/EC5801_21-10225/My_MCC_Config/mcc/mcc_generated_files/system/src/pins.c.p1	568824df121ea4f5
+88	1936	8013717496411609	CMakeFiles/Blink_default_default_XC8_compile.dir/E_/Documents/GitHub/EC5801_21-10225/My_MCC_Config/mcc/main.c.p1	798ef797cc2b52c8
+1936	4258	8013717514884133	E:/Documents/GitHub/EC5801_21-10225/out/Blink/default.elf	3228b55426ce1bc9

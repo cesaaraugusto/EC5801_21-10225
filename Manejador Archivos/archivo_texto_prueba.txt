@@ -1,2 +1,0 @@
-Esto es un archivo de prueba para una tarea de Sistemas Embebidos I
-y este es un archivo modificado por César García

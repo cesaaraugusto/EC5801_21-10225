@@ -1,2 +1,12 @@
 {
+    "mplab.clangd.compileCommandsDir": "${workspaceFolder}\\_build\\Blink\\default",
+    "mplab.clangd.path": "c:\\Program Files\\Microchip\\xc8\\v3.10\\bin\\xc8-clangd.exe",
+    "cmake.sourceDirectory": "C:/Users/oswy2/Documents/PIC/embedded_systems/apps/PIC16F13145/cmake/Blink/default",
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "memory-inspector.debugTypes": [
+        "arm-debugger",
+        "embedded-debug",
+        "gdb",
+        "mplab-core-da"
+    ]
 }
