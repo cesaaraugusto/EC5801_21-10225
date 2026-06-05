@@ -1,45 +1,95 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F6617 `(v ~T0 @X0 0 tf ]
-"823 C:/Users/Cesar/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.29.444/xc8\pic\include\proc/pic16f13145.h
-[s S51 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S51 . INTF . IOCIF TMR0IF ]
-"822
-[u S50 `S51 1 ]
-[n S50 . . ]
-"830
-[v _PIR0bits `VS50 ~T0 @X0 0 e@140 ]
-"347
-[s S31 :1 `uc 1 :5 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S31 . INTEDG . PEIE GIE ]
-"346
-[u S30 `S31 1 ]
-[n S30 . . ]
-"354
-[v _INTCONbits `VS30 ~T0 @X0 0 e@11 ]
-[v F6 `(v ~T0 @X0 0 tf ]
-"157 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src/../../system/interrupt.h
-[v _INT_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F6 ]
-"175
-[v _INT_DefaultInterruptHandler `(v ~T0 @X0 0 ef ]
-[t ~ __interrupt . k ]
-[t T1 __interrupt ]
-"1109 C:/Users/Cesar/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.29.444/xc8\pic\include\proc/pic16f13145.h
-[s S65 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S65 . INTE . IOCIE TMR0IE ]
-"1108
-[u S64 `S65 1 ]
-[n S64 . . ]
-"1116
-[v _PIE0bits `VS64 ~T0 @X0 0 e@150 ]
-"143 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src/../../system/../system/pins.h
-[v _PIN_MANAGER_IOC `(v ~T0 @X0 0 ef ]
-"256 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src/../../system/../timer/tmr0.h
-[v _TMR0_ISR `(v ~T0 @X0 0 ef ]
-"148 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src/../../system/interrupt.h
-[v _INT_CallBack `(v ~T0 @X0 0 ef ]
-[v F6623 `(v ~T0 @X0 0 tf ]
-[v F6625 `(v ~T0 @X0 0 tf ]
-[v F6627 `(v ~T0 @X0 0 tf ]
+[v F6574 `(v ~T0 @X0 0 tf ]
+"4759 C:/Users/Cesar/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.29.444/xc8\pic\include\proc/pic16f13145.h
+[v _T2CLKCON `Vuc ~T0 @X0 0 e@912 ]
+"4619
+[v _T2HLT `Vuc ~T0 @X0 0 e@911 ]
+"4941
+[v _T2RST `Vuc ~T0 @X0 0 e@913 ]
+"4419
+[v _T2PR `Vuc ~T0 @X0 0 e@909 ]
+"4365
+[v _T2TMR `Vuc ~T0 @X0 0 e@908 ]
+"44 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\timer\src\tmr2.c
+[v _TMR2_DefaultPeriodMatchCallback `(v ~T0 @X0 0 sf ]
+"913 C:/Users/Cesar/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.29.444/xc8\pic\include\proc/pic16f13145.h
+[s S55 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S55 . . TMR2IF . CCP1IF CCP2IF ]
+"912
+[u S54 `S55 1 ]
+[n S54 . . ]
+"921
+[v _PIR2bits `VS54 ~T0 @X0 0 e@142 ]
+"4473
+[v _T2CON `Vuc ~T0 @X0 0 e@910 ]
+"4479
+[s S220 :4 `uc 1 :3 `uc 1 :1 `uc 1 ]
+[n S220 . OUTPS CKPS ON ]
+"4484
+[s S221 :4 `uc 1 :3 `uc 1 :1 `uc 1 ]
+[n S221 . T2OUTPS T2CKPS T2ON ]
+"4489
+[s S222 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S222 . T2OUTPS0 T2OUTPS1 T2OUTPS2 T2OUTPS3 T2CKPS0 T2CKPS1 T2CKPS2 ]
+"4498
+[s S223 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S223 . OUTPS0 OUTPS1 OUTPS2 OUTPS3 CKPS0 CKPS1 CKPS2 TMR2ON ]
+"4478
+[u S219 `S220 1 `S221 1 `S222 1 `S223 1 ]
+[n S219 . . . . . ]
+"4509
+[v _T2CONbits `VS219 ~T0 @X0 0 e@910 ]
+"1199
+[s S69 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S69 . . TMR2IE . CCP1IE CCP2IE ]
+"1198
+[u S68 `S69 1 ]
+[n S68 . . ]
+"1207
+[v _PIE2bits `VS68 ~T0 @X0 0 e@152 ]
+"100 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\timer\src\tmr2.c
+[c E6507 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 22 23 17 18 19 .. ]
+[n E6507 . TMR2_ROP_STARTS_TMRON TMR2_ROP_STARTS_TMRON_ERSHIGH TMR2_ROP_STARTS_TMRON_ERSLOW TMR2_ROP_RESETS_ERSBOTHEDGE TMR2_ROP_RESETS_ERSRISINGEDGE TMR2_ROP_RESETS_ERSFALLINGEDGE TMR2_ROP_RESETS_ERSLOW TMR2_ROP_RESETS_ERSHIGH TMR2_OS_STARTS_TMRON TMR2_OS_STARTS_ERSRISINGEDGE TMR2_OS_STARTS_ERSFALLINGEDGE TMR2_OS_STARTS_ERSBOTHEDGE TMR2_OS_STARTS_ERSFIRSTRISINGEDGE TMR2_OS_STARTS_ERSFIRSTFALLINGEDGE TMR2_OS_STARTS_ERSRISINGEDGEDETECT TMR2_OS_STARTS_ERSFALLINGEDGEDETECT TMR2_OS_STARTS_TMRON_ERSHIGH TMR2_OS_STARTS_TMRON_ERSLOW TMR2_MS_STARTS_TMRON_ERSRISINGEDGEDETECT TMR2_MS_STARTS_TMRON_ERSFALLINGEDGEDETECT TMR2_MS_STARTS_TMRON_ERSBOTHEDGE  ]
+"4625 C:/Users/Cesar/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.29.444/xc8\pic\include\proc/pic16f13145.h
+[s S225 :5 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S225 . MODE CSYNC CPOL PSYNC ]
+"4631
+[s S226 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S226 . MODE0 MODE1 MODE2 MODE3 MODE4 CKSYNC CKPOL ]
+"4640
+[s S227 :5 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S227 . T2MODE T2CSYNC T2CPOL T2PSYNC ]
+"4646
+[s S228 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S228 . T2MODE0 T2MODE1 T2MODE2 T2MODE3 T2MODE4 ]
+"4624
+[u S224 `S225 1 `S226 1 `S227 1 `S228 1 ]
+[n S224 . . . . . ]
+"4654
+[v _T2HLTbits `VS224 ~T0 @X0 0 e@911 ]
+"105 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\timer\src\tmr2.c
+[c E6530 0 4 5 14 15 17 18 19 20 21 22 23 24 25 26 27 28 29 30 .. ]
+[n E6530 . TMR2_T2INPPS_PIN TMR2_CCP1OUT TMR2_CCP2OUT TMR2_C1OUT TMR2_C2OUT TMR2_CLC1OUT TMR2_CLC2OUT TMR2_CLC3OUT TMR2_CLC4OUT TMR2_CLB_BLE7 TMR2_CLB_BLE8 TMR2_CLB_BLE9 TMR2_CLB_BLE10 TMR2_CLB_BLE11 TMR2_CLB_BLE12 TMR2_CLB_BLE13 TMR2_CLB_BLE14 TMR2_PWM1OUT TMR2_PWM2OUT  ]
+"4947 C:/Users/Cesar/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.29.444/xc8\pic\include\proc/pic16f13145.h
+[s S240 :8 `uc 1 ]
+[n S240 . RSEL ]
+"4950
+[s S241 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S241 . RSEL0 RSEL1 RSEL2 RSEL3 RSEL4 ]
+"4957
+[s S242 :8 `uc 1 ]
+[n S242 . T2RSEL ]
+"4960
+[s S243 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S243 . T2RSEL0 T2RSEL1 T2RSEL2 T2RSEL3 T2RSEL4 ]
+"4946
+[u S239 `S240 1 `S241 1 `S242 1 `S243 1 ]
+[n S239 . . . . . ]
+"4968
+[v _T2RSTbits `VS239 ~T0 @X0 0 e@913 ]
+[v F6596 `(v ~T0 @X0 0 tf ]
+[v F6598 `(v ~T0 @X0 0 tf ]
+[v F6600 `(v ~T0 @X0 0 tf ]
 "38 C:/Users/Cesar/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.29.444/xc8\pic\include\proc/pic16f13145.h
 [; <" INDF0 equ 00h ;# ">
 "58
@@ -696,121 +746,244 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; <" TOSL equ 01FEEh ;# ">
 "17927
 [; <" TOSH equ 01FEFh ;# ">
-"38 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\interrupt.c
-[v _INT_InterruptHandler `*F6617 ~T0 @X0 1 e ]
-"40
-[v _INTERRUPT_Initialize `(v ~T0 @X0 1 ef ]
-"41
-{
-[e :U _INTERRUPT_Initialize ]
-[f ]
-"44
-[e = . . _PIR0bits 0 0 -> -> 0 `i `uc ]
-"45
-[e = . . _INTCONbits 0 0 -> -> 1 `i `uc ]
-"47
-[e ( _INT_SetInterruptHandler (1 &U _INT_DefaultInterruptHandler ]
+"43 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\timer\src\tmr2.c
+[v _TMR2_PeriodMatchCallback `*F6574 ~T0 @X0 1 s ]
 "50
+[v _TMR2_Initialize `(v ~T0 @X0 1 ef ]
+"51
+{
+[e :U _TMR2_Initialize ]
+[f ]
+"52
+[e = _T2CLKCON -> << -> 4 `i -> 0 `i `uc ]
+"54
+[e = _T2HLT -> | | | << -> 0 `i -> 0 `i << -> 0 `i -> 5 `i << -> 0 `i -> 6 `i << -> 0 `i -> 7 `i `uc ]
+"59
+[e = _T2RST -> << -> 0 `i -> 0 `i `uc ]
+"61
+[e = _T2PR -> -> 96 `i `uc ]
+"63
+[e = _T2TMR -> -> 0 `i `uc ]
+"65
+[e = _TMR2_PeriodMatchCallback &U _TMR2_DefaultPeriodMatchCallback ]
+"67
+[e = . . _PIR2bits 0 1 -> -> 0 `ui `uc ]
+"70
+[e = _T2CON -> | | << -> 4 `i -> 4 `i << -> 1 `i -> 7 `i << -> 0 `i -> 0 `i `uc ]
+"73
 [e :UE 881 ]
 }
-[v $root$_INTERRUPT_InterruptManager `(v ~T0 @X0 0 e ]
-"59
-[v _INTERRUPT_InterruptManager `(v ~T1 @X0 1 ef ]
-"60
-{
-[e :U _INTERRUPT_InterruptManager ]
-[f ]
-"62
-[e $ ! && == -> . . _PIE0bits 0 2 `i -> 1 `i == -> . . _PIR0bits 0 2 `i -> 1 `i 883  ]
-"63
-{
-"64
-[e ( _PIN_MANAGER_IOC ..  ]
-"65
-}
-[e $U 884  ]
-"66
-[e :U 883 ]
-[e $ ! == -> . . _INTCONbits 0 2 `i -> 1 `i 885  ]
-"67
-{
-"68
-[e $ ! && == -> . . _PIE0bits 0 3 `i -> 1 `i == -> . . _PIR0bits 0 3 `i -> 1 `i 886  ]
-"69
-{
-"70
-[e ( _TMR0_ISR ..  ]
-"71
-}
-[e $U 887  ]
-"72
-[e :U 886 ]
-"73
-{
 "75
-}
-[e :U 887 ]
+[v _TMR2_Deinitialize `(v ~T0 @X0 1 ef ]
 "76
-}
-[e $U 888  ]
-"77
-[e :U 885 ]
-"78
 {
+[e :U _TMR2_Deinitialize ]
+[f ]
+"77
+[e = . . _T2CONbits 3 7 -> -> 0 `ui `uc ]
+"79
+[e = . . _PIR2bits 0 1 -> -> 0 `ui `uc ]
 "80
-}
-[e :U 888 ]
-[e :U 884 ]
-"81
+[e = . . _PIE2bits 0 1 -> -> 0 `ui `uc ]
+"82
+[e = _T2CON -> -> 0 `i `uc ]
+"83
+[e = _T2CLKCON -> -> 0 `i `uc ]
+"84
+[e = _T2HLT -> -> 0 `i `uc ]
+"85
+[e = _T2RST -> -> 0 `i `uc ]
+"86
+[e = _T2PR -> -> 255 `i `uc ]
+"87
+[e = _T2TMR -> -> 0 `i `uc ]
+"88
 [e :UE 882 ]
 }
-"83
-[v _INT_ISR `(v ~T0 @X0 1 ef ]
-"84
+"90
+[v _TMR2_Start `(v ~T0 @X0 1 ef ]
+"91
 {
-[e :U _INT_ISR ]
+[e :U _TMR2_Start ]
 [f ]
-"85
-[e = . . _PIR0bits 0 0 -> -> 0 `i `uc ]
-"88
-[e ( _INT_CallBack ..  ]
-"89
-[e :UE 889 ]
-}
 "92
-[v _INT_CallBack `(v ~T0 @X0 1 ef ]
+[e = . . _T2CONbits 3 7 -> -> 1 `ui `uc ]
 "93
-{
-[e :U _INT_CallBack ]
-[f ]
+[e :UE 883 ]
+}
 "95
-[e $ ! != _INT_InterruptHandler -> -> 0 `i `*F6623 891  ]
+[v _TMR2_Stop `(v ~T0 @X0 1 ef ]
 "96
 {
+[e :U _TMR2_Stop ]
+[f ]
 "97
-[e ( *U _INT_InterruptHandler ..  ]
+[e = . . _T2CONbits 3 7 -> -> 0 `ui `uc ]
 "98
+[e :UE 884 ]
 }
-[e :U 891 ]
-"99
-[e :UE 890 ]
-}
+"100
+[v _TMR2_ModeSet `(v ~T0 @X0 1 ef1`E6507 ]
 "101
-[v _INT_SetInterruptHandler `(v ~T0 @X0 1 ef1`*F6625 ]
 {
-[e :U _INT_SetInterruptHandler ]
-[v _InterruptHandler `*F6627 ~T0 @X0 1 r1 ]
+[e :U _TMR2_ModeSet ]
+"100
+[v _mode `E6507 ~T0 @X0 1 r1 ]
+"101
 [f ]
 "102
-[e = _INT_InterruptHandler _InterruptHandler ]
+[e = . . _T2HLTbits 2 0 -> _mode `uc ]
 "103
-[e :UE 892 ]
+[e :UE 885 ]
 }
 "105
-[v _INT_DefaultInterruptHandler `(v ~T0 @X0 1 ef ]
+[v _TMR2_ExtResetSourceSet `(v ~T0 @X0 1 ef1`E6530 ]
+"106
 {
-[e :U _INT_DefaultInterruptHandler ]
+[e :U _TMR2_ExtResetSourceSet ]
+"105
+[v _reset `E6530 ~T0 @X0 1 r1 ]
+"106
 [f ]
+"107
+[e = . . _T2RSTbits 2 0 -> _reset `uc ]
 "108
+[e :UE 886 ]
+}
+"110
+[v _TMR2_CounterGet `(uc ~T0 @X0 1 ef ]
+"111
+{
+[e :U _TMR2_CounterGet ]
+[f ]
+"112
+[e ) _T2TMR ]
+[e $UE 887  ]
+"113
+[e :UE 887 ]
+}
+"115
+[v _TMR2_CounterSet `(v ~T0 @X0 1 ef1`uc ]
+"116
+{
+[e :U _TMR2_CounterSet ]
+"115
+[v _count `uc ~T0 @X0 1 r1 ]
+"116
+[f ]
+"117
+[e = _T2TMR _count ]
+"118
+[e :UE 888 ]
+}
+"120
+[v _TMR2_PeriodSet `(v ~T0 @X0 1 ef1`uc ]
+"121
+{
+[e :U _TMR2_PeriodSet ]
+"120
+[v _periodVal `uc ~T0 @X0 1 r1 ]
+"121
+[f ]
+"122
+[e = _T2PR _periodVal ]
+"123
+[e :UE 889 ]
+}
+"125
+[v _TMR2_PeriodGet `(uc ~T0 @X0 1 ef ]
+"126
+{
+[e :U _TMR2_PeriodGet ]
+[f ]
+"127
+[e ) _T2PR ]
+[e $UE 890  ]
+"128
+[e :UE 890 ]
+}
+"130
+[v _TMR2_MaxCountGet `(uc ~T0 @X0 1 ef ]
+"131
+{
+[e :U _TMR2_MaxCountGet ]
+[f ]
+"132
+[e ) -> -> 255 `ui `uc ]
+[e $UE 891  ]
+"133
+[e :UE 891 ]
+}
+"135
+[v _TMR2_PeriodMatchStatusGet `(a ~T0 @X0 1 ef ]
+"136
+{
+[e :U _TMR2_PeriodMatchStatusGet ]
+[f ]
+"137
+[e ) -> . . _PIR2bits 0 1 `a ]
+[e $UE 892  ]
+"138
+[e :UE 892 ]
+}
+"140
+[v _TMR2_PeriodMatchStatusClear `(v ~T0 @X0 1 ef ]
+"141
+{
+[e :U _TMR2_PeriodMatchStatusClear ]
+[f ]
+"142
+[e = . . _PIR2bits 0 1 -> -> 0 `ui `uc ]
+"143
 [e :UE 893 ]
+}
+"145
+[v _TMR2_Tasks `(v ~T0 @X0 1 ef ]
+"146
+{
+[e :U _TMR2_Tasks ]
+[f ]
+"147
+[e $ ! == -> 1 `ui -> . . _PIR2bits 0 1 `ui 895  ]
+"148
+{
+"149
+[e $ ! != -> -> -> 0 `i `*v `*F6596 _TMR2_PeriodMatchCallback 896  ]
+"150
+{
+"151
+[e ( *U _TMR2_PeriodMatchCallback ..  ]
+"152
+}
+[e :U 896 ]
+"153
+[e = . . _PIR2bits 0 1 -> -> 0 `ui `uc ]
+"154
+}
+[e :U 895 ]
+"155
+[e :UE 894 ]
+}
+"157
+[v _TMR2_PeriodMatchCallbackRegister `(v ~T0 @X0 1 ef1`*F6598 ]
+"158
+{
+[e :U _TMR2_PeriodMatchCallbackRegister ]
+"157
+[v _callbackHandler `*F6600 ~T0 @X0 1 r1 ]
+"158
+[f ]
+"159
+[e = _TMR2_PeriodMatchCallback _callbackHandler ]
+"160
+[e :UE 897 ]
+}
+"162
+[v _TMR2_DefaultPeriodMatchCallback `(v ~T0 @X0 1 sf ]
+"163
+{
+[e :U _TMR2_DefaultPeriodMatchCallback ]
+[f ]
+"165
+[e :UE 898 ]
 }

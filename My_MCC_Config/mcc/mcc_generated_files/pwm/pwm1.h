@@ -1,19 +1,17 @@
- /*
- * MAIN Generated Driver File
- * 
- * @file main.c
- * 
- * @defgroup main MAIN
- * 
- * @brief This is the generated driver implementation file for the MAIN driver.
+/**
+ * PWM1 Generated Driver API Header File
  *
- * @version MAIN Driver Version 1.0.2
+ * @file pwm1.h
  *
- * @version Package Version: 3.1.2
+ * @defgroup pwm1 PWM1
+ *
+ * @brief This file contains the API prototypes for the PWM1 driver.
+ *
+ * @version PWM1 Driver Version 2.0.5
 */
 
 /*
-ï¿½ [2026] Microchip Technology Inc. and its subsidiaries.
+© [2026] Microchip Technology Inc. and its subsidiaries.
 
     Subject to your compliance with these terms, you may use Microchip 
     software and any derivatives exclusively with Microchip products. 
@@ -32,43 +30,38 @@
     EXCEED AMOUNT OF FEES, IF ANY, YOU PAID DIRECTLY TO MICROCHIP FOR 
     THIS SOFTWARE.
 */
-#include "mcc_generated_files/system/pins.h"
-#include "mcc_generated_files/system/system.h"
-#include "mcc_generated_files/timer/tmr0.h"
-#include <stdint.h>
 
-#define CONSTANT_1 0xff
+#ifndef PWM1_H
+ #define PWM1_H
+ 
+ /**
+  * Section: Included Files
+  */
 
-/* Callbacks */
-void TMR0_Callback(void){
-    LED_Toggle();
-}
+ #include <xc.h>
+ #include <stdint.h>
 
-/*
-    Main application
-*/
+ /**
+  * Section: Macro Declarations
+ */
 
-int main(void)
-{
-    SYSTEM_Initialize();
+ #define PWM1_INITIALIZE_DUTY_VALUE    193
 
-    // Enable the Global Interrupts 
-    INTERRUPT_GlobalInterruptEnable(); 
-    
 
-    // Enable the Peripheral Interrupts 
-    INTERRUPT_PeripheralInterruptEnable(); 
+/**
+ * @ingroup pwm1
+ * @brief Initializes the PWM1 interface.
+ * @param None.
+ * @return None.
+ */
+ void PWM1_Initialize(void);
 
-    //Defining interruption
-    //SWITCH_SetInterruptHandler(switch_interrupt);
-
-    TMR0_PeriodMatchCallbackRegister(TMR0_Callback);
-    TMR0_TMRInterruptEnable();
-    TMR0_Start();
-    TMR2_Start();
-
-    while(1){
-       // SLEEP();
-    }    
-}
-
+ /**
+ * @ingroup pwm1
+ * @brief Loads the 16-bit duty cycle value.
+ * @param uint16_t dutyValue - PWM1 duty cycle value to be loaded.
+ * @return None.
+ */
+ void PWM1_LoadDutyValue(uint16_t dutyValue);
+ 
+ #endif	//PWM1_H

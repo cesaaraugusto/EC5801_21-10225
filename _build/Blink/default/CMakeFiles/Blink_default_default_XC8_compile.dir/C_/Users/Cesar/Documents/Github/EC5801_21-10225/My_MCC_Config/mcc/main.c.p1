@@ -8,7 +8,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "772
 [v _LATCbits `VS48 ~T0 @X0 0 e@26 ]
 [p mainexit ]
-"55 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc/mcc_generated_files/system/system.h
+"57 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc/mcc_generated_files/system/system.h
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
 "347 C:/Users/Cesar/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.29.444/xc8\pic\include\proc/pic16f13145.h
 [s S31 :1 `uc 1 :5 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -18,13 +18,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 [n S30 . . ]
 "354
 [v _INTCONbits `VS30 ~T0 @X0 0 e@11 ]
-[v F6543 `(v ~T0 @X0 0 tf ]
+[v F6546 `(v ~T0 @X0 0 tf ]
 "264 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc/mcc_generated_files/system/../timer/tmr0.h
-[v _TMR0_PeriodMatchCallbackRegister `(v ~T0 @X0 0 ef1`*F6543 ]
+[v _TMR0_PeriodMatchCallbackRegister `(v ~T0 @X0 0 ef1`*F6546 ]
 "240
 [v _TMR0_TMRInterruptEnable `(v ~T0 @X0 0 ef ]
 "179
 [v _TMR0_Start `(v ~T0 @X0 0 ef ]
+"402 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc/mcc_generated_files/system/../timer/tmr2.h
+[v _TMR2_Start `(v ~T0 @X0 0 ef ]
 "38 C:/Users/Cesar/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.29.444/xc8\pic\include\proc/pic16f13145.h
 [; <" INDF0 equ 00h ;# ">
 "58
@@ -714,16 +716,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _TMR0_TMRInterruptEnable ..  ]
 "67
 [e ( _TMR0_Start ..  ]
-"69
+"68
+[e ( _TMR2_Start ..  ]
+"70
 [e :U 887 ]
 {
-"70
-[; <" sleep ;# ">
-"71
+"72
 }
 [e :U 886 ]
 [e $U 887  ]
 [e :U 888 ]
-"72
+"73
 [e :UE 885 ]
 }

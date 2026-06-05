@@ -1,19 +1,17 @@
- /*
- * MAIN Generated Driver File
- * 
- * @file main.c
- * 
- * @defgroup main MAIN
- * 
- * @brief This is the generated driver implementation file for the MAIN driver.
- *
- * @version MAIN Driver Version 1.0.2
- *
- * @version Package Version: 3.1.2
+/**
+  * PWM1 Generated Driver File
+  *
+  * @file pwm1.c
+  *
+  * @ingroup pwm1
+  *
+  * @brief This file contains the API implementations for the PWM1 module.
+  *
+  * @version PWM1 Driver Version 2.0.5
 */
 
-/*
-ï¿½ [2026] Microchip Technology Inc. and its subsidiaries.
+ /*
+© [2026] Microchip Technology Inc. and its subsidiaries.
 
     Subject to your compliance with these terms, you may use Microchip 
     software and any derivatives exclusively with Microchip products. 
@@ -32,43 +30,41 @@
     EXCEED AMOUNT OF FEES, IF ANY, YOU PAID DIRECTLY TO MICROCHIP FOR 
     THIS SOFTWARE.
 */
-#include "mcc_generated_files/system/pins.h"
-#include "mcc_generated_files/system/system.h"
-#include "mcc_generated_files/timer/tmr0.h"
-#include <stdint.h>
+ 
+ /**
+  * Section: Included Files
+  */
 
-#define CONSTANT_1 0xff
+ #include <xc.h>
+ #include "../pwm1.h"
 
-/* Callbacks */
-void TMR0_Callback(void){
-    LED_Toggle();
-}
+ /**
+  * Section: PWM Module APIs
+  */
 
-/*
-    Main application
-*/
+ void PWM1_Initialize(void)
+ {
+    // Set the PWM1 to the options selected in the User Interface
+    
+    // PWMPOL active_hi; PWMEN enabled; 
+    PWM1CON = (uint8_t)0x80;
+    
+    // PWMDCH 48; 
+    PWM1DCH = (uint8_t)0x30;
 
-int main(void)
-{
-    SYSTEM_Initialize();
-
-    // Enable the Global Interrupts 
-    INTERRUPT_GlobalInterruptEnable(); 
+    // PWMDCL 1; 
+    PWM1DCL = (uint8_t)0x40;
     
 
-    // Enable the Peripheral Interrupts 
-    INTERRUPT_PeripheralInterruptEnable(); 
 
-    //Defining interruption
-    //SWITCH_SetInterruptHandler(switch_interrupt);
+    PWMTMRS0bits.P1TSEL = (uint8_t)0x1;
+ }
 
-    TMR0_PeriodMatchCallbackRegister(TMR0_Callback);
-    TMR0_TMRInterruptEnable();
-    TMR0_Start();
-    TMR2_Start();
-
-    while(1){
-       // SLEEP();
-    }    
-}
-
+ void PWM1_LoadDutyValue(uint16_t dutyValue)
+ {
+     // Writing to 8 MSBs of PWM duty cycle in PWMDCH register
+     PWM1DCH = (uint8_t) ((dutyValue & 0x03FCu) >> 2);
+     
+     // Writing to 2 LSBs of PWM duty cycle in PWMDCL register
+     PWM1DCL = (uint8_t) ((dutyValue & 0x0003u) << 6);
+ }

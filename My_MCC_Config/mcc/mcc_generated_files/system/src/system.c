@@ -41,6 +41,8 @@ void SYSTEM_Initialize(void)
     CLOCK_Initialize();
     PIN_MANAGER_Initialize();
     TMR0_Initialize();
+    TMR2_Initialize();
+    PWM1_Initialize();
     INTERRUPT_Initialize();
 }
 

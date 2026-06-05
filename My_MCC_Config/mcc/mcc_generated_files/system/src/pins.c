@@ -50,7 +50,7 @@ void PIN_MANAGER_Initialize(void)
     */
     TRISA = 0x37;
     TRISB = 0xF0;
-    TRISC = 0xFA;
+    TRISC = 0xF8;
 
     /**
     ANSELx registers
@@ -84,11 +84,12 @@ void PIN_MANAGER_Initialize(void)
     */
     INLVLA = 0x3F;
     INLVLB = 0xF0;
-    INLVLC = 0xF2;
+    INLVLC = 0xF0;
 
     /**
     PPS registers
     */
+    RC1PPS = 0x2C;  //RC1->PWM1:PWM1;
     RC0PPS = 0x1F;  //RC0->TMR0:TMR0;
 
     /**

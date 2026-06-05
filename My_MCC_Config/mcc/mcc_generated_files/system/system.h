@@ -41,9 +41,11 @@
 #include <stdbool.h>
 #include "config_bits.h"
 #include "../system/pins.h"
+#include "../pwm/pwm1.h"
 #include "../system/interrupt.h"
 #include "../system/clock.h"
 #include "../timer/tmr0.h"
+#include "../timer/tmr2.h"
 
 /**
  * @ingroup systemdriver

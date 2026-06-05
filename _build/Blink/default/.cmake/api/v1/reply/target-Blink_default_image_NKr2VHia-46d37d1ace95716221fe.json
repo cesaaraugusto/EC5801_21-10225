@@ -229,7 +229,9 @@
 				3,
 				4,
 				5,
-				6
+				6,
+				7,
+				8
 			]
 		}
 	],
@@ -239,6 +241,12 @@
 			"backtrace" : 3,
 			"isGenerated" : true,
 			"path" : "C:/Users/Cesar/Documents/Github/EC5801_21-10225/_build/Blink/default/CMakeFiles/Blink_default_default_XC8_compile.dir/C_/Users/Cesar/Documents/Github/EC5801_21-10225/My_MCC_Config/mcc/main.c.p1",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "C:/Users/Cesar/Documents/Github/EC5801_21-10225/_build/Blink/default/CMakeFiles/Blink_default_default_XC8_compile.dir/C_/Users/Cesar/Documents/Github/EC5801_21-10225/My_MCC_Config/mcc/mcc_generated_files/pwm/src/pwm1.c.p1",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -275,6 +283,12 @@
 			"backtrace" : 3,
 			"isGenerated" : true,
 			"path" : "C:/Users/Cesar/Documents/Github/EC5801_21-10225/_build/Blink/default/CMakeFiles/Blink_default_default_XC8_compile.dir/C_/Users/Cesar/Documents/Github/EC5801_21-10225/My_MCC_Config/mcc/mcc_generated_files/timer/src/tmr0.c.p1",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "C:/Users/Cesar/Documents/Github/EC5801_21-10225/_build/Blink/default/CMakeFiles/Blink_default_default_XC8_compile.dir/C_/Users/Cesar/Documents/Github/EC5801_21-10225/My_MCC_Config/mcc/mcc_generated_files/timer/src/tmr2.c.p1",
 			"sourceGroupIndex" : 0
 		}
 	],

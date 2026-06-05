@@ -1,45 +1,18 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F6617 `(v ~T0 @X0 0 tf ]
-"823 C:/Users/Cesar/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.29.444/xc8\pic\include\proc/pic16f13145.h
-[s S51 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S51 . INTF . IOCIF TMR0IF ]
-"822
-[u S50 `S51 1 ]
-[n S50 . . ]
-"830
-[v _PIR0bits `VS50 ~T0 @X0 0 e@140 ]
-"347
-[s S31 :1 `uc 1 :5 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S31 . INTEDG . PEIE GIE ]
-"346
-[u S30 `S31 1 ]
-[n S30 . . ]
-"354
-[v _INTCONbits `VS30 ~T0 @X0 0 e@11 ]
-[v F6 `(v ~T0 @X0 0 tf ]
-"157 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src/../../system/interrupt.h
-[v _INT_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F6 ]
-"175
-[v _INT_DefaultInterruptHandler `(v ~T0 @X0 0 ef ]
-[t ~ __interrupt . k ]
-[t T1 __interrupt ]
-"1109 C:/Users/Cesar/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.29.444/xc8\pic\include\proc/pic16f13145.h
-[s S65 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S65 . INTE . IOCIE TMR0IE ]
-"1108
-[u S64 `S65 1 ]
-[n S64 . . ]
-"1116
-[v _PIE0bits `VS64 ~T0 @X0 0 e@150 ]
-"143 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src/../../system/../system/pins.h
-[v _PIN_MANAGER_IOC `(v ~T0 @X0 0 ef ]
-"256 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src/../../system/../timer/tmr0.h
-[v _TMR0_ISR `(v ~T0 @X0 0 ef ]
-"148 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src/../../system/interrupt.h
-[v _INT_CallBack `(v ~T0 @X0 0 ef ]
-[v F6623 `(v ~T0 @X0 0 tf ]
-[v F6625 `(v ~T0 @X0 0 tf ]
-[v F6627 `(v ~T0 @X0 0 tf ]
+"8503 C:/Users/Cesar/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.29.444/xc8\pic\include\proc/pic16f13145.h
+[v _PWM1CON `Vuc ~T0 @X0 0 e@2082 ]
+"8483
+[v _PWM1DCH `Vuc ~T0 @X0 0 e@2081 ]
+"8462
+[v _PWM1DCL `Vuc ~T0 @X0 0 e@2080 ]
+"8669
+[s S428 :2 `uc 1 :2 `uc 1 ]
+[n S428 . P1TSEL P2TSEL ]
+"8668
+[u S427 `S428 1 ]
+[n S427 . . ]
+"8674
+[v _PWMTMRS0bits `VS427 ~T0 @X0 0 e@2095 ]
 "38 C:/Users/Cesar/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.29.444/xc8\pic\include\proc/pic16f13145.h
 [; <" INDF0 equ 00h ;# ">
 "58
@@ -696,121 +669,36 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; <" TOSL equ 01FEEh ;# ">
 "17927
 [; <" TOSH equ 01FEFh ;# ">
-"38 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\system\src\interrupt.c
-[v _INT_InterruptHandler `*F6617 ~T0 @X0 1 e ]
-"40
-[v _INTERRUPT_Initialize `(v ~T0 @X0 1 ef ]
-"41
+"45 C:\Users\Cesar\Documents\Github\EC5801_21-10225\My_MCC_Config\mcc\mcc_generated_files\pwm\src\pwm1.c
+[v _PWM1_Initialize `(v ~T0 @X0 1 ef ]
+"46
 {
-[e :U _INTERRUPT_Initialize ]
+[e :U _PWM1_Initialize ]
 [f ]
-"44
-[e = . . _PIR0bits 0 0 -> -> 0 `i `uc ]
-"45
-[e = . . _INTCONbits 0 0 -> -> 1 `i `uc ]
-"47
-[e ( _INT_SetInterruptHandler (1 &U _INT_DefaultInterruptHandler ]
 "50
+[e = _PWM1CON -> -> 128 `i `uc ]
+"53
+[e = _PWM1DCH -> -> 48 `i `uc ]
+"56
+[e = _PWM1DCL -> -> 64 `i `uc ]
+"60
+[e = . . _PWMTMRS0bits 0 0 -> -> 1 `i `uc ]
+"61
 [e :UE 881 ]
 }
-[v $root$_INTERRUPT_InterruptManager `(v ~T0 @X0 0 e ]
-"59
-[v _INTERRUPT_InterruptManager `(v ~T1 @X0 1 ef ]
-"60
-{
-[e :U _INTERRUPT_InterruptManager ]
-[f ]
-"62
-[e $ ! && == -> . . _PIE0bits 0 2 `i -> 1 `i == -> . . _PIR0bits 0 2 `i -> 1 `i 883  ]
 "63
-{
+[v _PWM1_LoadDutyValue `(v ~T0 @X0 1 ef1`us ]
 "64
-[e ( _PIN_MANAGER_IOC ..  ]
-"65
-}
-[e $U 884  ]
+{
+[e :U _PWM1_LoadDutyValue ]
+"63
+[v _dutyValue `us ~T0 @X0 1 r1 ]
+"64
+[f ]
 "66
-[e :U 883 ]
-[e $ ! == -> . . _INTCONbits 0 2 `i -> 1 `i 885  ]
-"67
-{
-"68
-[e $ ! && == -> . . _PIE0bits 0 3 `i -> 1 `i == -> . . _PIR0bits 0 3 `i -> 1 `i 886  ]
+[e = _PWM1DCH -> >> & -> _dutyValue `ui -> 1020 `ui -> 2 `i `uc ]
 "69
-{
+[e = _PWM1DCL -> << & -> _dutyValue `ui -> 3 `ui -> 6 `i `uc ]
 "70
-[e ( _TMR0_ISR ..  ]
-"71
-}
-[e $U 887  ]
-"72
-[e :U 886 ]
-"73
-{
-"75
-}
-[e :U 887 ]
-"76
-}
-[e $U 888  ]
-"77
-[e :U 885 ]
-"78
-{
-"80
-}
-[e :U 888 ]
-[e :U 884 ]
-"81
 [e :UE 882 ]
-}
-"83
-[v _INT_ISR `(v ~T0 @X0 1 ef ]
-"84
-{
-[e :U _INT_ISR ]
-[f ]
-"85
-[e = . . _PIR0bits 0 0 -> -> 0 `i `uc ]
-"88
-[e ( _INT_CallBack ..  ]
-"89
-[e :UE 889 ]
-}
-"92
-[v _INT_CallBack `(v ~T0 @X0 1 ef ]
-"93
-{
-[e :U _INT_CallBack ]
-[f ]
-"95
-[e $ ! != _INT_InterruptHandler -> -> 0 `i `*F6623 891  ]
-"96
-{
-"97
-[e ( *U _INT_InterruptHandler ..  ]
-"98
-}
-[e :U 891 ]
-"99
-[e :UE 890 ]
-}
-"101
-[v _INT_SetInterruptHandler `(v ~T0 @X0 1 ef1`*F6625 ]
-{
-[e :U _INT_SetInterruptHandler ]
-[v _InterruptHandler `*F6627 ~T0 @X0 1 r1 ]
-[f ]
-"102
-[e = _INT_InterruptHandler _InterruptHandler ]
-"103
-[e :UE 892 ]
-}
-"105
-[v _INT_DefaultInterruptHandler `(v ~T0 @X0 1 ef ]
-{
-[e :U _INT_DefaultInterruptHandler ]
-[f ]
-"108
-[e :UE 893 ]
 }
