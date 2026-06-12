@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : [],
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-f6f22219c74102c3da70.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Blink_default_project",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Blink_default_default_XC8_assemblePreprocess::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Blink_default_default_XC8_assemblePreprocess-9b95c524ffd34b7345b7.json",
+					"name" : "Blink_default_default_XC8_assemblePreprocess",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Blink_default_default_XC8_compile::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Blink_default_default_XC8_compile-7c490902c72fd97054c5.json",
+					"name" : "Blink_default_default_XC8_compile",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Blink_default_image_NKr2VHia::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Blink_default_image_NKr2VHia-2fa1d6a5cd6451271bb5.json",
+					"name" : "Blink_default_image_NKr2VHia",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Cesar/Documents/Github/EC5801_21-10225/_build/Blink/default",
+		"source" : "C:/Users/Cesar/Documents/Github/EC5801_21-10225/cmake/Blink/default"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	}
+}
